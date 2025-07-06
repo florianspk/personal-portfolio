@@ -72,7 +72,7 @@ jobs:
 
       - name: Package Helm chart with version
         run: |
-          helm package helm/personal-portfolio --version ${{ steps.extract.outputs.app_version }}
+          helm package helm/ --version ${{ steps.extract.outputs.app_version }}
 
       - name: Push Helm chart to GHCR
         run: |
