@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -f site/Dockerfile -t ghcr.io/${{ github.repository_owner }}/personal-portfolio/static-site:${{ steps.extract.outputs.app_version }} .
+          docker build -t ghcr.io/${{ github.repository_owner }}/personal-portfolio/static-site:${{ steps.extract.outputs.app_version }} ./site
 
       - name: Push Docker image
         run: |
