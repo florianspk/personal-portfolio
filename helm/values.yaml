@@ -1,9 +1,9 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/florianspk/personal-portfolio
+  repository: ghcr.io/florianspk/personal-portfolio/static-site
   tag: "latest" # Override the default tag
-
+  pullSecrets: github-registry
 service:
   type: ClusterIP
 

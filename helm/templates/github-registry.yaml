@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: github-registry
+  namespace: personal-portfolio
+spec:
+  encryptedData:
+    .dockerconfigjson: AgCJCHJLF3yVuFAdkRvKpxQr3nPMpVZkRvywG9db9fPDndYYmgZ1o4xPc1EEiUcUxJmvEcv4jMp3P7vgG9X8/hV6Q9+8GIF5bQiMQU2gcgE5GbyP/oHniLftq//bw3iNDMNX474kVarwCWDKlWHgmAa+g6eL3rGSrL1lqfRRzr9C8NSXYjArOE05f71CSdLFFvQKDHFPtcFLxcLCKBscq6PUClYm+bCa9/2k+QzdliohYQp+NsYOuCck944naDknwkl2ahTA3qW6OWP/A01qo+BAZR/rt6zeNaerzPKgYHyQ7QnS5qyxdcv+kooQjfD0YLiWBGRbtmdFQ5DBUqf7d6WDOd6zP4a6Qv+C9T/47jBEQ8ka3UDJ467Az0YZ8Lw1kdN0OI+IKIuxz4NS3P/QS4blIky+oBTnQ3MeIQa/Th/YRbBcAeG9ZUkIDZxDqF3d4e+wX9HhfWY839eVBH3S4qkbpxxhj/lKAfpxpS8rp/jRC+tWLR5yHR8AeyUFeJWauqYpzltzffjckXg4XFLkE4DrWrsKB0pnvvj6A1ChKMf8onRk8PSz2xpbAtlYltuuKB4htFA7lrX519FYM+/82JjrzXQpeIid5WgMpffJAVDFZREXJl3+YBV8pSxKNMhboPd8+wPW1WLdunRphvNy9Fe8+U9/I/8MAaV+gYELLRURKKNdpXhqbQS62S33Nc+nrS6E4+Dyaewy2xDWMvKJGmA8SF4DO3S0UZrAv6V3YGPyYCIhiD9w87e6l6IleF2aHzAFlrfmRI56IiN2uXWlqeD7X139JaY6qyW4WWqBtg06h2cXUug7RtMPAz6PfAsJX6Jpd9vOGjkyidelZBgZK1+2QiRK/d5RtA==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: github-registry
+      namespace: personal-portfolio
+    type: kubernetes.io/dockerconfigjson
