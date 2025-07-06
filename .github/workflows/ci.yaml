@@ -1,0 +1,79 @@
+name: Build & Deploy Personal Portfolio + Helm Chart (versionné)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    outputs:
+      app_version: ${{ steps.extract.outputs.app_version }}
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Extract appVersion from Chart.yaml
+        id: extract
+        run: |
+          APP_VERSION=$(grep '^appVersion:' helm/Chart.yaml | awk '{print $2}' | tr -d '"')
+          echo "app_version=$APP_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GHCR_TOKEN }}
+
+      - name: Build Docker image
+        run: |
+          docker build -f site/Dockerfile -t ghcr.io/${{ github.repository_owner }}/personal-portfolio/static-site:${{ steps.extract.outputs.app_version }} .
+
+      - name: Push Docker image
+        run: |
+          docker push ghcr.io/${{ github.repository_owner }}/personal-portfolio/static-site:${{ steps.extract.outputs.app_version }}
+
+  package-and-push-helm:
+    runs-on: ubuntu-latest
+    needs: build-and-push
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Helm
+        uses: azure/setup-helm@v3
+
+      - name: Extract appVersion from Chart.yaml
+        id: extract
+        run: |
+          APP_VERSION=$(grep '^appVersion:' helm/Chart.yaml | awk '{print $2}' | tr -d '"')
+          echo "app_version=$APP_VERSION" >> "$GITHUB_OUTPUT"
+      - name: Patch image.tag in values.yaml
+        run: |
+          sed -i "s/^  tag: .*/  tag: \"${{ steps.extract.outputs.app_version }}\"/" helm/values.yaml
+
+      - name: Patch image.tag in values.yaml
+        run: |
+          sed -i "s/^  tag: .*/  tag: \"${{ steps.extract.outputs.app_version }}\"/" helm/values.yaml
+
+      - name: Log in to GHCR (Helm)
+        run: |
+          echo "${{ secrets.GHCR_TOKEN }}" | helm registry login -u ${{ github.actor }} --password-stdin ghcr.io
+
+      - name: Package Helm chart with version
+        run: |
+          helm package helm/personal-portfolio --version ${{ steps.extract.outputs.app_version }}
+
+      - name: Push Helm chart to GHCR
+        run: |
+          helm push personal-portfolio-${{ steps.extract.outputs.app_version }}.tgz oci://ghcr.io/${{ github.repository_owner }}/personal-portfolio
