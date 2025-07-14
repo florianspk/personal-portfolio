@@ -1,4 +1,4 @@
-const RSS_API_URL = "http://localhost:3000/rss";
+const RSS_API_URL = "https://florianspk.fr/rss";
 
 function createPostHTML(post) {
   return `
