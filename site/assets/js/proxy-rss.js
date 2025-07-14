@@ -1,4 +1,4 @@
-const RSS_API_URL = "https://florianspk.fr/rss";
+const RSS_API_URL = "/rss";
 
 function createPostHTML(post) {
   return `
