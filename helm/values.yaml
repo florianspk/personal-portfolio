@@ -1,9 +1,18 @@
 replicaCount: 1
+global:
+  image:
+    repository: ghcr.io/florianspk/personal-portfolio/
+    pullSecrets: github-registry
 
-image:
-  repository: ghcr.io/florianspk/personal-portfolio/static-site
-  tag: "latest" # Override the default tag
-  pullSecrets: github-registry
+site:
+  image:
+    name: static-site
+    tag: "latest" # Override tag by CI
+proxy_rss:
+  image:
+    name: proxy-rss
+    tag: "latest" # Override tag by CI
+
 service:
   type: ClusterIP
 
@@ -11,3 +20,6 @@ ingress:
   enabled: true
   host: florianspk.fr
   ingressClassName: ingress-public
+
+anubis:
+  enabled: false
