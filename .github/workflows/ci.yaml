@@ -95,11 +95,11 @@ jobs:
           echo "app_version=$APP_VERSION" >> "$GITHUB_OUTPUT"
       - name: Patch image.tag in values.yaml
         run: |
-          sed -i "s/^    tag: .*/  tag: \"${{ steps.extract.outputs.app_version }}\"/" helm/values.yaml
+          sed -i "s/^    tag: .*/    tag: \"${{ steps.extract.outputs.app_version }}\"/" helm/values.yaml
 
       - name: Patch image.tag in values.yaml
         run: |
-          sed -i "s/^    tag: .*/  tag: \"${{ steps.extract.outputs.app_version }}\"/" helm/values.yaml
+          sed -i "s/^    tag: .*/    tag: \"${{ steps.extract.outputs.app_version }}\"/" helm/values.yaml
 
       - name: Log in to GHCR (Helm)
         run: |
