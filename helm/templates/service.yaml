@@ -11,5 +11,11 @@ spec:
       targetPort: 80
       protocol: TCP
       name: http
+{{- if .Values.anubis.enabled }}
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      name: anubis
+{{- end }}
   selector:
     app: personal-portfolio

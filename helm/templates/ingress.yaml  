@@ -15,5 +15,5 @@ spec:
               service:
                 name: personal-portfolio
                 port:
-                  number: 80
+                  name: {{ if .Values.anubis.enabled }}anubis{{ else }}http{{ end }}
 {{- end }}
