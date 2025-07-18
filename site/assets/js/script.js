@@ -122,26 +122,6 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-    const targetPage = this.innerText.toLowerCase();
-
-    // Toggle pages
-    pages.forEach((page) => {
-      page.classList.toggle("active", page.dataset.page === targetPage);
-    });
-
-    // Toggle nav links
-    navigationLinks.forEach((link) => {
-      link.classList.remove("active");
-    });
-    this.classList.add("active");
-
-    window.scrollTo(0, 0);
-  });
-}
-
 const certifications = [
   {
     name: "CKA",
@@ -180,4 +160,110 @@ certifications.forEach((cert) => {
   `;
 
   certList.appendChild(li);
+});
+
+// Fonction pour attendre que Litlyx soit chargé
+function waitForLitlyx(callback, maxAttempts = 50) {
+  let attempts = 0;
+
+  const checkLitlyx = () => {
+    attempts++;
+
+    if (typeof Lit !== "undefined") {
+      console.log("✅ Litlyx chargé après", attempts, "tentatives");
+      callback();
+    } else if (attempts < maxAttempts) {
+      console.log("⏳ Attente de Litlyx... tentative", attempts);
+      setTimeout(checkLitlyx, 100); // Réessayer dans 100ms
+    } else {
+      console.error(
+        "❌ Litlyx n'a pas pu être chargé après",
+        maxAttempts,
+        "tentatives",
+      );
+    }
+  };
+
+  checkLitlyx();
+}
+
+// Fonction pour initialiser la navigation une fois Litlyx chargé
+function initNavigation() {
+  try {
+    Lit.event("navigation-init");
+  } catch (error) {
+    console.error("❌ Erreur test initial:", error);
+  }
+
+  // page navigation variables
+  const navigationLinks = document.querySelectorAll("[data-nav-link]");
+  const pages = document.querySelectorAll("[data-page]");
+
+  // add event to all nav link
+  for (let i = 0; i < navigationLinks.length; i++) {
+    navigationLinks[i].addEventListener("click", function () {
+      const targetPage = this.innerText.toLowerCase();
+
+      // Toggle pages
+      pages.forEach((page) => {
+        page.classList.toggle("active", page.dataset.page === targetPage);
+      });
+
+      // Toggle nav links
+      navigationLinks.forEach((link) => {
+        link.classList.remove("active");
+      });
+      this.classList.add("active");
+
+      // Envoyer événement Litlyx
+      try {
+        Lit.event(`page-visit-${targetPage}`);
+
+        Lit.event("page-navigation", {
+          page: targetPage,
+          timestamp: new Date().toISOString(),
+          referrer: document.referrer || "direct",
+          userAgent: navigator.userAgent.substring(0, 100),
+        });
+      } catch (error) {
+        console.error("❌ Erreur envoi événements:", error);
+      }
+
+      window.scrollTo(0, 0);
+    });
+  }
+
+  // Tracker la page initiale
+  const activePage = document.querySelector("[data-page].active");
+  if (activePage) {
+    const pageName = activePage.dataset.page;
+    try {
+      Lit.event(`page-visit-${pageName}`);
+      Lit.event("page-load", {
+        page: pageName,
+        timestamp: new Date().toISOString(),
+        userAgent: navigator.userAgent.substring(0, 100),
+        url: window.location.href,
+      });
+    } catch (error) {
+      console.error("❌ Erreur événements page initiale:", error);
+    }
+  }
+}
+
+// Initialisation au chargement du DOM
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("📋 DOM chargé, attente de Litlyx...");
+  // Attendre que Litlyx soit chargé avant d'initialiser
+  waitForLitlyx(initNavigation);
+});
+
+// Fallback: essayer aussi au chargement complet de la page
+window.addEventListener("load", function () {
+  console.log("🔄 Page complètement chargée");
+  // Si Litlyx n'est toujours pas initialisé, réessayer
+  if (typeof Lit === "undefined") {
+    console.log("⚠️ Litlyx toujours pas chargé, nouvelle tentative...");
+    waitForLitlyx(initNavigation);
+  }
 });

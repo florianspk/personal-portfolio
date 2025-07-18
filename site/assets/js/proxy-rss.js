@@ -5,8 +5,7 @@ function createPostHTML(post) {
     <li class="blog-post-item">
       <a href="${post.link}" target="_blank" rel="noopener noreferrer">
         <figure class="blog-banner-box">
-          <img src="${post.image}" alt="${post.title}" loading="lazy"
-               onerror="this.src='./assets/images/blog-default.png'" />
+          <img src="${post.image}" alt="${post.title}" loading="lazy" />
         </figure>
         <div class="blog-content">
         <div class="blog-meta">

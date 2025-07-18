@@ -5,7 +5,7 @@ services:
       - "8080:80"
     volumes:
       - ./site:/usr/share/nginx/html
-  proxy:
+  proxy-rss:
     build: ./proxy-rss
     ports:
       - "3000:3000"
