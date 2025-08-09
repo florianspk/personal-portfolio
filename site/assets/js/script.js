@@ -139,7 +139,7 @@ const certifications = [
     name: "Manage Kubernetes - GCP",
     image: "./assets/images/manage-kubernetes-gcp.png",
     description: "Certification Argo Administrator - CNCF",
-    alt: "CAPA ArgoCD badge",
+    alt: "Badge Google Cloud attestant la gestion de clusters Kubernetes sur GCP",
   },
 ];
 
