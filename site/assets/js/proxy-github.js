@@ -6,6 +6,7 @@ const customImages = {
   "home-lab-talos": "/assets/images/homelab-talos.png",
   "personal-portfolio": "/assets/images/personal-portfolio.png",
   "wheezy-blog": "/assets/images/wheezy-blog.png",
+  "tetris-webapp": "/assets/images/tetris-webapp.png",
 };
 
 const customCategories = {
