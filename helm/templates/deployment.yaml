@@ -67,6 +67,6 @@ spec:
             - containerPort: 3000
           env:
             - name: "RSS_FEED_URL"
-              value: "http://wheezy-blog.wheezy-blog/index.xml"
+              value: "http://wheezy-blog.wheezy-blog"
       imagePullSecrets:
         - name: {{ .Values.global.image.pullSecrets }}

@@ -41,11 +41,16 @@ function cleanJsonObject(obj) {
 }
 
 function createPostHTML(post) {
+  // Proxy les images pour éviter les erreurs CORS
+  const imageUrl = post.image.startsWith("https://blog.wheezy.fr/")
+    ? "/image-proxy?url=" + encodeURIComponent(post.image)
+    : post.image;
+
   return `
     <li class="blog-post-item">
       <a href="${post.link}" target="_blank" rel="noopener noreferrer">
         <figure class="blog-banner-box">
-          <img src="${post.image}" alt="${post.title}" loading="lazy" />
+          <img src="${imageUrl}" alt="${post.title}" loading="lazy" />
         </figure>
         <div class="blog-content">
         <div class="blog-meta">
