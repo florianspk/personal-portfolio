@@ -1,15 +1,17 @@
 apiVersion: bitnami.com/v1alpha1
 kind: SealedSecret
 metadata:
+  annotations:
+    sealedsecrets.bitnami.com/cluster-wide: "true"
   creationTimestamp: null
   name: github-registry
-  namespace: personal-portfolio
 spec:
   encryptedData:
-    .dockerconfigjson: AgCJCHJLF3yVuFAdkRvKpxQr3nPMpVZkRvywG9db9fPDndYYmgZ1o4xPc1EEiUcUxJmvEcv4jMp3P7vgG9X8/hV6Q9+8GIF5bQiMQU2gcgE5GbyP/oHniLftq//bw3iNDMNX474kVarwCWDKlWHgmAa+g6eL3rGSrL1lqfRRzr9C8NSXYjArOE05f71CSdLFFvQKDHFPtcFLxcLCKBscq6PUClYm+bCa9/2k+QzdliohYQp+NsYOuCck944naDknwkl2ahTA3qW6OWP/A01qo+BAZR/rt6zeNaerzPKgYHyQ7QnS5qyxdcv+kooQjfD0YLiWBGRbtmdFQ5DBUqf7d6WDOd6zP4a6Qv+C9T/47jBEQ8ka3UDJ467Az0YZ8Lw1kdN0OI+IKIuxz4NS3P/QS4blIky+oBTnQ3MeIQa/Th/YRbBcAeG9ZUkIDZxDqF3d4e+wX9HhfWY839eVBH3S4qkbpxxhj/lKAfpxpS8rp/jRC+tWLR5yHR8AeyUFeJWauqYpzltzffjckXg4XFLkE4DrWrsKB0pnvvj6A1ChKMf8onRk8PSz2xpbAtlYltuuKB4htFA7lrX519FYM+/82JjrzXQpeIid5WgMpffJAVDFZREXJl3+YBV8pSxKNMhboPd8+wPW1WLdunRphvNy9Fe8+U9/I/8MAaV+gYELLRURKKNdpXhqbQS62S33Nc+nrS6E4+Dyaewy2xDWMvKJGmA8SF4DO3S0UZrAv6V3YGPyYCIhiD9w87e6l6IleF2aHzAFlrfmRI56IiN2uXWlqeD7X139JaY6qyW4WWqBtg06h2cXUug7RtMPAz6PfAsJX6Jpd9vOGjkyidelZBgZK1+2QiRK/d5RtA==
+    .dockerconfigjson: AgA9luFws9rxvvo4A67qDiTIG7I+eyRmPkEfuQMibR7/j3CvXTGKUhITK+2KDsLuXG1JiqfQBeHsPgBbJ6MEP5IZyPQe5ilf+eQjjb90o/l5bWBojifAMoCAnVXH7y3AqeLBFBAojDmZcNXo3lMDI77EZVlmrl9+DNJ+cSW2yQgcQOVNhETSczwQ04diLKQeqTeG9dDl2aI85DEhTi5nKkM43msE4k7OSiWmuWty1UtOblmNV3bijrlcvu70MVxL2iCMLa9tDBTArl5Z4cr3ZU7f8oqG8gSJe4aO69ndr5IEaZPxOv2MuVHxwYqkBiPUX3wiT4bI7WOYkKWqa3rvCxm7VJDJch80ZdxFAAElYtPNTRi12krNT1ZhQmoWeHRe+Tsmu2s+p999C1QtQwgBhAUWlCcVKleYLiRS0XD08mdCXnAtF3ryP/B5WWv8PJQDfF6PUxLgaK/X9Plx2HabhUICzzMKJJUsFaYBCzw3IWH1/Jvb6beNK2jXV4kXmAWbBhW5ib6MAaoHXoQvw2aahl88/paBTyhUKoRhV8TEAYVD4NdOPfbkIILIhrOxdVQ5ukEG+lJWMhQcKRru32sbn8h+2n+48s0keBwMbk0WZE6ElMwz4/SYbRnQtoL1WfPoCbiS0oAUY6gPRAwLochG8SMLk9dO51RYRxULTU1rxNYsL4z4KKLSPFiH5oTCLH4clEPLiIhVJh+oAiUXz+8fkQEIa4yM/tqStYBxG91ZXmDTssYE/ZcyQUvS1+qsNO0uYVq22QkwyPXCx/7L2k1a8GLPi2/mtzgT0Xg/JJuAkWVS2+bP9+nsPE4ZIyoci0ptjbW9Uk/lGM8X75t4Y02uJF3VhvS0RqmlZA==
   template:
     metadata:
+      annotations:
+        sealedsecrets.bitnami.com/cluster-wide: "true"
       creationTimestamp: null
       name: github-registry
-      namespace: personal-portfolio
     type: kubernetes.io/dockerconfigjson
