@@ -61,12 +61,5 @@ spec:
           image: "{{ .Values.global.image.repository }}{{ .Values.site.image.name }}:{{ .Values.site.image.tag }}"
           ports:
             - containerPort: 80
-        - name: proxy-rss
-          image: "{{ .Values.global.image.repository }}{{ .Values.proxy_rss.image.name }}:{{ .Values.proxy_rss.image.tag }}"
-          ports:
-            - containerPort: 3000
-          env:
-            - name: "RSS_FEED_URL"
-              value: "https://blog.wheezy.fr"
       imagePullSecrets:
         - name: {{ .Values.global.image.pullSecrets }}

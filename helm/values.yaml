@@ -8,10 +8,6 @@ site:
   image:
     name: static-site
     tag: "latest" # Override tag by CI
-proxy_rss:
-  image:
-    name: proxy-rss
-    tag: "latest" # Override tag by CI
 
 service:
   type: ClusterIP
