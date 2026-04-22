@@ -1,269 +1,150 @@
-"use strict";
-
-// element toggle function
-const elementToggleFunc = function (elem) {
-  elem.classList.toggle("active");
-};
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () {
-  elementToggleFunc(sidebar);
-});
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-// const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-};
-
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-  testimonialsItem[i].addEventListener("click", function () {
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector(
-      "[data-testimonials-title]",
-    ).innerHTML;
-    modalText.innerHTML = this.querySelector(
-      "[data-testimonials-text]",
-    ).innerHTML;
-
-    testimonialsModalFunc();
-  });
-}
-
-// add click event to modal close button
-// modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-// overlay.addEventListener("click", testimonialsModalFunc);
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-select.addEventListener("click", function () {
-  elementToggleFunc(this);
-});
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-  for (let i = 0; i < filterItems.length; i++) {
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
-  }
-};
-
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
-
-for (let i = 0; i < filterBtn.length; i++) {
-  filterBtn[i].addEventListener("click", function () {
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-  });
-}
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-  });
-}
-
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
-const certifications = [
-  {
-    name: "CKA",
-    image: "./assets/images/cka-badge.png",
-    description: "Certified Kubernetes Administrator - CNCF",
-    alt: "CKA badge",
-  },
-  {
-    name: "CAPA ArgoCD",
-    image: "./assets/images/capa-argo-cd.png",
-    description: "Certification Argo Administrator - CNCF",
-    alt: "CAPA ArgoCD badge",
-  },
-  {
-    name: "Manage Kubernetes - GCP",
-    image: "./assets/images/manage-kubernetes-gcp.png",
-    description: "Certification Argo Administrator - CNCF",
-    alt: "Badge Google Cloud attestant la gestion de clusters Kubernetes sur GCP",
-  },
-];
-
-const certList = document.getElementById("certification-list");
-
-certifications.forEach((cert) => {
-  const li = document.createElement("li");
-  li.classList.add("service-item");
-
-  li.innerHTML = `
-    <div class="service-icon-box">
-      <img src="${cert.image}" alt="${cert.alt}" width="40" />
-    </div>
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">${cert.name}</h4>
-      <p class="service-item-text">${cert.description}</p>
-    </div>
-  `;
-
-  certList.appendChild(li);
-});
-
-// Fonction pour attendre que Litlyx soit chargé
-function waitForLitlyx(callback, maxAttempts = 50) {
-  let attempts = 0;
-
-  const checkLitlyx = () => {
-    attempts++;
-
-    if (typeof Lit !== "undefined") {
-      console.log("✅ Litlyx chargé après", attempts, "tentatives");
-      callback();
-    } else if (attempts < maxAttempts) {
-      console.log("⏳ Attente de Litlyx... tentative", attempts);
-      setTimeout(checkLitlyx, 100); // Réessayer dans 100ms
-    } else {
-      console.error(
-        "❌ Litlyx n'a pas pu être chargé après",
-        maxAttempts,
-        "tentatives",
-      );
-    }
-  };
-
-  checkLitlyx();
-}
-
-// Fonction pour initialiser la navigation une fois Litlyx chargé
-function initNavigation() {
-  try {
-    Lit.event("navigation-init");
-  } catch (error) {
-    console.error("❌ Erreur test initial:", error);
-  }
-
-  // page navigation variables
-  const navigationLinks = document.querySelectorAll("[data-nav-link]");
-  const pages = document.querySelectorAll("[data-page]");
-
-  // add event to all nav link
-  for (let i = 0; i < navigationLinks.length; i++) {
-    navigationLinks[i].addEventListener("click", function () {
-      const targetPage = this.innerText.toLowerCase();
-
-      // Toggle pages
-      pages.forEach((page) => {
-        page.classList.toggle("active", page.dataset.page === targetPage);
-      });
-
-      // Toggle nav links
-      navigationLinks.forEach((link) => {
-        link.classList.remove("active");
-      });
-      this.classList.add("active");
-
-      // Envoyer événement Litlyx
-      try {
-        Lit.event(`page-visit-${targetPage}`);
-
-        Lit.event("page-navigation", {
-          page: targetPage,
-          timestamp: new Date().toISOString(),
-          referrer: document.referrer || "direct",
-          userAgent: navigator.userAgent.substring(0, 100),
+// ── Scroll animations ──────────────────────────────
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(
+                    () => entry.target.classList.add("visible"),
+                    i * 60,
+                );
+                observer.unobserve(entry.target);
+            }
         });
-      } catch (error) {
-        console.error("❌ Erreur envoi événements:", error);
-      }
+    },
+    { threshold: 0.08 },
+);
+document
+    .querySelectorAll(".fade-up")
+    .forEach((el) => observer.observe(el));
 
-      window.scrollTo(0, 0);
-    });
-  }
+// ── GitHub API ─────────────────────────────────────
+const GITHUB_USERNAME = "florianspk"; // ← ton vrai username GitHub ici
 
-  // Tracker la page initiale
-  const activePage = document.querySelector("[data-page].active");
-  if (activePage) {
-    const pageName = activePage.dataset.page;
-    try {
-      Lit.event(`page-visit-${pageName}`);
-      Lit.event("page-load", {
-        page: pageName,
-        timestamp: new Date().toISOString(),
-        userAgent: navigator.userAgent.substring(0, 100),
-        url: window.location.href,
-      });
-    } catch (error) {
-      console.error("❌ Erreur événements page initiale:", error);
+const LANG_COLORS = {
+    Go: "#00add8",
+    Python: "#3572a5",
+    JavaScript: "#f1e05a",
+    TypeScript: "#2b7489",
+    Shell: "#89e051",
+    Dockerfile: "#384d54",
+    YAML: "#cb171e",
+    HCL: "#844fba",
+    Rust: "#dea584",
+};
+
+function renderRepos(repos) {
+    const grid = document.getElementById("github-grid");
+
+    if (!repos.length) {
+        grid.innerHTML =
+            '<div class="gh-error">Aucun repository public trouvé.</div>';
+        return;
     }
-  }
+
+    grid.innerHTML = repos
+        .map((repo) => {
+            const langColor =
+                LANG_COLORS[repo.language] || "#8b949e";
+            const desc = repo.description
+                ? repo.description.length > 90
+                    ? repo.description.slice(0, 87) + "…"
+                    : repo.description
+                : '<span style="color:var(--text-muted);font-style:italic">Pas de description</span>';
+
+            return `
+          <a class="gh-card" href="${repo.html_url}" target="_blank" rel="noopener">
+            <div class="gh-card-header">
+              <span class="gh-repo-icon">⎔</span>
+              <span class="gh-repo-name">${repo.name}</span>
+              ${repo.fork ? '<span style="font-family:var(--mono);font-size:.6rem;color:var(--text-muted);border:1px solid var(--border);padding:.1rem .4rem;border-radius:4px;">fork</span>' : ""}
+            </div>
+            <div class="gh-repo-desc">${desc}</div>
+            <div class="gh-card-footer">
+              ${
+                  repo.language
+                      ? `
+                <span class="gh-lang">
+                  <span class="gh-lang-dot" style="background:${langColor}"></span>
+                  ${repo.language}
+                </span>`
+                      : ""
+              }
+              ${
+                  repo.stargazers_count > 0
+                      ? `
+                <span class="gh-stars">★ ${repo.stargazers_count}</span>`
+                      : ""
+              }
+              ${
+                  repo.forks_count > 0
+                      ? `
+                <span class="gh-stars" style="color:var(--text-muted)">⑂ ${repo.forks_count}</span>`
+                      : ""
+              }
+            </div>
+          </a>
+        `;
+        })
+        .join("");
+
+    // Animate cards in
+    grid.querySelectorAll(".gh-card").forEach((card, i) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(16px)";
+        setTimeout(() => {
+            card.style.transition =
+                "opacity .4s ease, transform .4s ease, border-color .15s, transform .15s";
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }, i * 60);
+    });
 }
 
-// Initialisation au chargement du DOM
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("📋 DOM chargé, attente de Litlyx...");
-  // Attendre que Litlyx soit chargé avant d'initialiser
-  waitForLitlyx(initNavigation);
-});
+async function fetchGitHubRepos() {
+    const grid = document.getElementById("github-grid");
+    try {
+        // Fetch jusqu'à 30 repos publics, triés par dernière mise à jour
+        const res = await fetch(
+            `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=30&type=public`,
+            {
+                headers: {
+                    Accept: "application/vnd.github.v3+json",
+                },
+            },
+        );
 
-// Fallback: essayer aussi au chargement complet de la page
-window.addEventListener("load", function () {
-  console.log("🔄 Page complètement chargée");
-  // Si Litlyx n'est toujours pas initialisé, réessayer
-  if (typeof Lit === "undefined") {
-    console.log("⚠️ Litlyx toujours pas chargé, nouvelle tentative...");
-    waitForLitlyx(initNavigation);
-  }
-});
+        if (!res.ok) {
+            // Rate limit ou user inconnu
+            if (res.status === 403) throw new Error("rate_limit");
+            if (res.status === 404) throw new Error("not_found");
+            throw new Error("api_error");
+        }
+
+        const repos = await res.json();
+
+        // Filtre : on exclut les forks sans stars et les repos vides
+        const filtered = repos
+            .filter((r) => !r.private)
+            .filter((r) => !(r.fork && r.stargazers_count === 0))
+            .slice(0, 12); // max 12 cards
+
+        renderRepos(filtered);
+    } catch (err) {
+        let msg = "Impossible de charger les repositories GitHub.";
+        if (err.message === "rate_limit")
+            msg =
+                "Limite de l'API GitHub atteinte. Réessaie dans quelques minutes.";
+        if (err.message === "not_found")
+            msg = `Utilisateur GitHub "${GITHUB_USERNAME}" introuvable. Vérifie le username dans le code.`;
+
+        grid.innerHTML = `
+          <div class="gh-error">
+            <div style="margin-bottom:.8rem;">⚠ ${msg}</div>
+            <a href="https://github.com/${GITHUB_USERNAME}" target="_blank" class="btn btn-outline" style="display:inline-flex;">
+              Voir le profil GitHub →
+            </a>
+          </div>`;
+    }
+}
+
+fetchGitHubRepos();

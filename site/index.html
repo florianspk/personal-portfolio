@@ -1,987 +1,808 @@
 <!doctype html>
 <html lang="fr">
     <head>
+        <title>
+            Consultant Kubernetes Freelance | DevOps SRE | CKA CKS | Audit &
+            Formation
+        </title>
+
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio Florianspk</title>
-
-        <!--
-    - favicon
-  -->
-        <link
-            rel="shortcut icon"
-            href="./assets/images/logo.ico"
-            type="image/x-icon"
+        <meta
+            name="description"
+            content="Consultant Kubernetes freelance (CKA, CKS). Audit, migration et formation Kubernetes pour entreprises. Disponible soirs, week-ends et missions ponctuelles."
         />
 
-        <!--
-    - custom css link
-  -->
-        <link rel="stylesheet" href="./assets/css/style.css" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://florianspk.fr" />
 
-        <!--
-    - google font link
-  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-            rel="stylesheet"
+        <!-- Open Graph -->
+        <meta
+            property="og:title"
+            content="Consultant Kubernetes Freelance | Florian Spk"
         />
+        <meta
+            property="og:description"
+            content="Audit, migration et formation Kubernetes. Expert certifié CKA/CKS."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://florianspk.fr" />
+
+        <!-- Schema.org -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Florian Spk",
+                "jobTitle": "Consultant Kubernetes Freelance",
+                "url": "https://florianspk.fr",
+                "sameAs": [
+                    "https://github.com/florianspk",
+                    "https://linkedin.com/in/florianspk"
+                ],
+                "knowsAbout": [
+                    "Kubernetes",
+                    "DevOps",
+                    "SRE",
+                    "Terraform",
+                    "CI/CD"
+                ]
+            }
+        </script>
+        <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
-
     <body>
-        <!--
-    - #MAIN
-  -->
+        <!-- NAV -->
+        <nav>
+            <div class="nav-logo"><span>~/</span>florian-spk</div>
+            <ul class="nav-links">
+                <li><a href="#certifs">Certifications</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#homelab">Homelab</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li>
+                    <a href="https://blog.wheezy.fr" target="_blank">Blog</a>
+                </li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
 
-        <main>
-            <!--
-      - #SIDEBAR
-    -->
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-prompt">
+                <span class="arrow">❯</span>
+                <span class="path">~/florian-spk</span>
+                <span class="branch"> git:(main)</span>
+            </div>
+            <h1 class="hero-title">
+                Florian Spk<br />
+                <span class="role"> Freelance · SRE · DevOps Engineer </span
+                ><span class="cursor"></span>
+            </h1>
 
-            <aside class="sidebar" data-sidebar>
-                <div class="sidebar-info">
-                    <figure class="avatar-box">
-                        <img
-                            src="./assets/images/my-avatar.png"
-                            alt="Florian Spick"
-                            width="80"
-                        />
-                    </figure>
+            <p class="hero-sub">
+                Expert Kubernetes freelance spécialisé en
+                <span class="hl">audit</span>,
+                <span class="hl">migration</span> et
+                <span class="hl">formation</span>.<br />
+                J'accompagne les entreprises sur leurs infrastructures
+                Kubernetes en production.
+            </p>
 
-                    <div class="info-content">
-                        <h1 class="name" title="Florian Spick">
-                            Florian Spick
-                        </h1>
+            <p class="hero-sub" style="margin-top: 10px">
+                Basé en France — disponible en remote, soirs, week-ends et
+                missions ponctuelles.
+            </p>
+            <div class="hero-badges">
+                <span class="badge badge-green">✓ CKA</span>
+                <span class="badge badge-green">✓ CKS</span>
+                <span class="badge badge-cyan">✓ CAPA</span>
+                <span class="badge badge-yellow">✓ Google GKE</span>
+                <span class="badge badge-purple">6 ans d'XP</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-green">→ Me contacter</a>
+                <a href="#experiences" class="btn btn-outline"
+                    >Voir l'expérience</a
+                >
+                <a
+                    href="https://github.com/florianspk"
+                    target="_blank"
+                    class="btn btn-outline"
+                    >⎇ GitHub</a
+                >
+            </div>
+        </section>
 
-                        <p class="title">SRE / Platform Engineer</p>
+        <!-- CERTIFICATIONS -->
+        <div class="container" id="certifs">
+            <div class="section-title fade-up">
+                <span class="hash">#</span> Certifications
+            </div>
+            <div class="section-desc fade-up">
+                4 certifications actives — Kubernetes, GitOps, Google Cloud
+            </div>
+            <div class="certifs-grid">
+                <div class="certif-card fade-up">
+                    <div class="certif-header">
+                        <div class="certif-badge-big">CKA</div>
+                        <span class="certif-level">Expert</span>
+                    </div>
+                    <div class="certif-name">
+                        Certified Kubernetes Administrator
+                    </div>
+                    <div class="certif-org">CNCF · Linux Foundation</div>
+                </div>
+                <div class="certif-card fade-up">
+                    <div class="certif-header">
+                        <div class="certif-badge-big">CKS</div>
+                        <span class="certif-level">Expert</span>
+                    </div>
+                    <div class="certif-name">
+                        Certified Kubernetes Security Specialist
+                    </div>
+                    <div class="certif-org">CNCF · Linux Foundation</div>
+                </div>
+                <div class="certif-card fade-up">
+                    <div class="certif-header">
+                        <div class="certif-badge-big">CAPA</div>
+                        <span class="certif-level">Associate</span>
+                    </div>
+                    <div class="certif-name">
+                        Certified Argo Project Associate
+                    </div>
+                    <div class="certif-org">Linux Foundation</div>
+                </div>
+                <div class="certif-card fade-up">
+                    <div class="certif-header">
+                        <div
+                            class="certif-badge-big"
+                            style="color: var(--yellow)"
+                        >
+                            GKE
+                        </div>
+                        <span
+                            class="certif-level"
+                            style="
+                                color: var(--yellow);
+                                border-color: #9e7a1f;
+                                background: rgba(227, 179, 65, 0.08);
+                            "
+                            >Pro</span
+                        >
+                    </div>
+                    <div class="certif-name">
+                        Google Kubernetes Engine Professional
+                    </div>
+                    <div class="certif-org">Google Cloud</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPÉRIENCES CDI -->
+        <div style="background: var(--bg2)">
+            <div class="container" id="experiences">
+                <div class="section-title fade-up">
+                    <span class="hash">#</span> Expériences
+                </div>
+                <div class="section-desc fade-up">
+                    Projets réalisés en production lors de mes postes
+                </div>
+
+                <div class="timeline">
+                    <!-- Poste 2 — le plus récent -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-header">
+                            <div>
+                                <div class="timeline-company">
+                                    ⬡ Equasens &nbsp;·&nbsp; Grand Est
+                                </div>
+                                <div class="timeline-role">
+                                    Ingénieur DevOps / SRE
+                                </div>
+                            </div>
+                            <span class="timeline-date">2022 → présent</span>
+                        </div>
+                        <div class="timeline-desc">
+                            Responsable de l'infrastructure Kubernetes en
+                            production : migration legacy, observabilité,
+                            sécurité et déploiement de workloads IA/GPU.
+                            Autonomie complète sur les choix d'architecture et
+                            de tooling.
+                        </div>
+                        <div class="project-list">
+                            <div class="project-item">
+                                <span class="project-item-icon">▸</span>
+                                <div>
+                                    <div class="project-item-title">
+                                        Inférence GPU sur Kubernetes
+                                    </div>
+                                    <div class="project-item-desc">
+                                        Déploiement de workloads d'inférence ML
+                                        sur GPU NVIDIA en production.
+                                        Configuration du device plugin
+                                        Kubernetes, isolation des ressources GPU
+                                        par namespace, scheduling prioritaire et
+                                        monitoring des métriques DCGM via
+                                        Prometheus.
+                                    </div>
+                                    <div class="project-tags">
+                                        <span class="ptag"
+                                            >NVIDIA GPU Operator</span
+                                        >
+                                        <span class="ptag">DCGM Exporter</span>
+                                        <span class="ptag">Prometheus</span>
+                                        <span class="ptag"
+                                            >Resource Quotas</span
+                                        >
+                                        <span class="ptag"
+                                            >Taints/Tolerations</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <span class="project-item-icon">▸</span>
+                                <div>
+                                    <div class="project-item-title">
+                                        Stack de gestion des logs — Loki
+                                    </div>
+                                    <div class="project-item-desc">
+                                        Déploiement et opération d'une stack
+                                        Loki distribuée (microservices) pour
+                                        centraliser les logs de l'ensemble du
+                                        cluster. Intégration Promtail, pipelines
+                                        de parsing, dashboards Grafana et
+                                        alertes LogQL sur les erreurs critiques.
+                                    </div>
+                                    <div class="project-tags">
+                                        <span class="ptag">Loki</span>
+                                        <span class="ptag">Promtail</span>
+                                        <span class="ptag">Grafana</span>
+                                        <span class="ptag">LogQL</span>
+                                        <span class="ptag"
+                                            >S3 / Object Storage</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <span class="project-item-icon">▸</span>
+                                <div>
+                                    <div class="project-item-title">
+                                        Migration infrastructure legacy →
+                                        Kubernetes
+                                    </div>
+                                    <div class="project-item-desc">
+                                        Migration complète d'une infrastructure
+                                        VM legacy (bare-metal OVH / 1000 VMs
+                                        sous vmware) vers un cluster Kubernetes.
+                                        Containerisation des applications,
+                                        définition des manifests Helm, mise en
+                                        place du GitOps ArgoCD et gestion des
+                                        données stateful avec opérateurs dédiés.
+                                    </div>
+                                    <div class="project-tags">
+                                        <span class="ptag">Kubernetes</span>
+                                        <span class="ptag">Helm</span>
+                                        <span class="ptag">ArgoCD</span>
+                                        <span class="ptag">Terraform</span>
+                                        <span class="ptag">CloudNativePG</span>
+                                        <span class="ptag">Velero</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <span class="project-item-icon">▸</span>
+                                <div>
+                                    <div class="project-item-title">
+                                        Administration des BDD (Postgres / Mysql
+                                        / MongoDB)
+                                    </div>
+                                    <div class="project-item-desc">
+                                        Administration de BDD sur des VM, mais
+                                        également migration de ces BDD vers une
+                                        infrastructure conteneurisé, avec mise
+                                        en place de tunning et d'observabilité
+                                        celon les besoins
+                                    </div>
+                                    <div class="project-tags">
+                                        <span class="ptag">DBA</span>
+                                        <span class="ptag">Kubernetes</span>
+                                        <span class="ptag">CNPG</span>
+                                        <span class="ptag"
+                                            >Mariadb Operator</span
+                                        >
+                                        <span class="ptag">CloudNativePG</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <button class="info_more-btn" data-sidebar-btn>
-                        <span>Me contacter</span>
-
-                        <ion-icon name="chevron-down"></ion-icon>
-                    </button>
-                </div>
-
-                <div class="sidebar-info_more">
-                    <div class="separator"></div>
-
-                    <ul class="contacts-list">
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </div>
-
-                            <div class="contact-info">
-                                <p class="contact-title">Email</p>
-
-                                <a
-                                    href="mailto:florian@florianspk.fr"
-                                    class="contact-link"
-                                    >florian@florianspk.fr</a
-                                >
-                            </div>
-                        </li>
-
-                        <li class="contact-item">
-                            <div class="icon-box">
-                                <ion-icon name="location-outline"></ion-icon>
-                            </div>
-
-                            <div class="contact-info">
-                                <p class="contact-title">Localisation</p>
-
-                                <address>Nancy, France</address>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="separator"></div>
-
-                    <ul class="social-list">
-                        <li class="social-item">
-                            <a href="https://github.com/florianspk" class="social-link" target="_blank">
-                                <ion-icon name="logo-github"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li class="social-item">
-                            <a href="https://www.linkedin.com/in/florian-spick/" class="social-link" target="_blank">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!--
-      - #main-content
-    -->
-
-            <div class="main-content">
-                <!--
-        - #NAVBAR
-      -->
-
-                <nav class="navbar">
-                    <ul class="navbar-list">
-                        <li class="navbar-item">
-                            <button class="navbar-link active" data-nav-link>
-                                Présentation
-                            </button>
-                        </li>
-
-                        <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>
-                                Formations
-                            </button>
-                        </li>
-
-                        <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>
-                                Projets
-                            </button>
-                        </li>
-
-                        <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>
-                                Blog
-                            </button>
-                        </li>
-
-                        <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>
-                                Contact
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-
-                <!--
-        - #ABOUT
-      -->
-
-                <article class="about active" data-page="présentation">
-                    <header>
-                        <h2 class="h2 article-title">Présentation</h2>
-                    </header>
-
-                    <section class="about-text">
-                        <p>
-                            Passionné par l’automatisation et les technologies
-                            d'infrastructure, j’aime explorer en continu de
-                            nouvelles solutions pour améliorer la performance,
-                            la fiabilité et la scalabilité des systèmes. Mon
-                            approche est centrée sur l’optimisation des
-                            processus et l’efficacité des équipes techniques.
-                        </p>
-
-                        <p>
-                            À travers mes expériences professionnelles et mes
-                            projets personnels, j’ai acquis une solide expertise
-                            Kubernetes, pipelines CI/CD, Infrastructure as Code
-                            (IAC) et en administration système. J’ai à cœur de
-                            concevoir des environnements robustes et
-                            automatisés, afin de réduire les tâches manuelles,
-                            sécuriser les déploiements et accélérer les cycles
-                            de livraison.
-                        </p>
-                    </section>
-
-                    <!--
-          - service
-        -->
-
-                    <section class="service">
-                        <h3 class="h3 service-title">
-                            Mes domaines d'activités
-                        </h3>
-
-                        <ul class="service-list">
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="./assets/images/icon-automation.png"
-                                        alt="automation icon"
-                                        width="40"
-                                    />
+                    <!-- Poste 1 — précédent -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-header">
+                            <div>
+                                <div class="timeline-company">
+                                    ⬡ Inovea Conseil
                                 </div>
-
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Automatisation & DevOps
-                                    </h4>
-
-                                    <p class="service-item-text">
-                                        Mise en place de pipelines CI/CD,
-                                        d’outils d’intégration et de déploiement
-                                        automatisés pour accélérer les
-                                        livraisons et fiabiliser les processus.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/kubernetes.svg"
-                                        alt="Kubernetes icon"
-                                        width="40"
-                                    />
-                                </div>
-
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Orchestration Kubernetes
-                                    </h4>
-
-                                    <p class="service-item-text">
-                                        Conception, déploiement et gestion de
-                                        clusters Kubernetes pour des
-                                        environnements de production résilients,
-                                        évolutifs et sécurisés.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="./assets/images/icon-cloud.png"
-                                        alt="Cloud infrastructure icon"
-                                        width="40"
-                                    />
-                                </div>
-
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Infrastructure cloud
-                                    </h4>
-
-                                    <p class="service-item-text">
-                                        Création et maintenance
-                                        d’infrastructures cloud (Proxmox, GCP,
-                                        etc.) avec une approche Infrastructure
-                                        as Code (Terraform, Ansible).
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/grafana.svg"
-                                        alt="Monitoring icon"
-                                        width="33"
-                                    />
-                                </div>
-
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Monitoring & Observabilité
-                                    </h4>
-
-                                    <p class="service-item-text">
-                                        Mise en place de solutions de
-                                        supervision (Prometheus, Grafana, Loki,
-                                        etc.) pour garantir la visibilité, la
-                                        performance et la stabilité des
-                                        systèmes.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="service">
-                        <h3 class="h3 service-title">Outils</h3>
-
-                        <ul class="service-list">
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/kubernetes.svg"
-                                        alt="Kubernetes"
-                                        width="40"
-                                    />
-                                </div>
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Kubernetes
-                                    </h4>
-                                    <p class="service-item-text">
-                                        Déploiement, Helm, Cilium, ArgoCD,
-                                        Talos...
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/golang.svg"
-                                        alt="Go"
-                                        width="40"
-                                    />
-                                </div>
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">Go</h4>
-                                    <p class="service-item-text">
-                                        Développement d’API, outils CLI,
-                                        intégration eBPF...
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/tailscale-light.svg"
-                                        alt="Tailscale"
-                                        width="40"
-                                    />
-                                </div>
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Tailscale
-                                    </h4>
-                                    <p class="service-item-text">
-                                        Mise en réseau Zero Trust, ACLs,
-                                        MagicDNS, Headscale...
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/pfsense-light.svg"
-                                        alt="Pfsense"
-                                        width="40"
-                                    />
-                                </div>
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Pfsense
-                                    </h4>
-                                    <p class="service-item-text">
-                                        Firewall, Vxlan, DNS, DHCP, NAT
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/proxmox.svg"
-                                        alt="Proxmox"
-                                        width="40"
-                                    />
-                                </div>
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Proxmox
-                                    </h4>
-                                    <p class="service-item-text">
-                                        Virtualisation, Storage, Networking,
-                                        Backup
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/hashicorp-terraform-light.svg"
-                                        alt="Terraform"
-                                        width="40"
-                                    />
-                                </div>
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Terraform
-                                    </h4>
-                                    <p class="service-item-text">
-                                        Infrastructure as Code, Provisioning,
-                                        Deployment, Configuration Management
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="service-item">
-                                <div class="service-icon-box">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/ansible-light.svg"
-                                        alt="Ansible"
-                                        width="40"
-                                    />
-                                </div>
-                                <div class="service-content-box">
-                                    <h4 class="h4 service-item-title">
-                                        Ansible
-                                    </h4>
-                                    <p class="service-item-text">
-                                        Configuration, Mise a jour cluster k8s
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="service" id="certification-section">
-                        <h3 class="h3 service-title">Mes certifications</h3>
-                        <ul class="service-list" id="certification-list">
-                            <!-- Injecté dynamiquement par JS -->
-                        </ul>
-                    </section>
-                    <!--
-          - testimonials
-        -->
-
-                    <!-- <section class="testimonials">
-                        <h3 class="h3 testimonials-title">Testimonials</h3>
-
-                        <ul class="testimonials-list has-scrollbar">
-                            <li class="testimonials-item">
-                                <div
-                                    class="content-card"
-                                    data-testimonials-item
-                                >
-                                    <figure class="testimonials-avatar-box">
-                                        <img
-                                            src="./assets/images/avatar-1.png"
-                                            alt="Daniel lewis"
-                                            width="60"
-                                            data-testimonials-avatar
-                                        />
-                                    </figure>
-
-                                    <h4
-                                        class="h4 testimonials-item-title"
-                                        data-testimonials-title
-                                    >
-                                        Daniel lewis
-                                    </h4>
-
-                                    <div
-                                        class="testimonials-text"
-                                        data-testimonials-text
-                                    >
-                                        <p>
-                                            Richard was hired to create a
-                                            corporate identity. We were very
-                                            pleased with the work done. She has
-                                            a lot of experience and is very
-                                            concerned about the needs of client.
-                                            Lorem ipsum dolor sit amet,
-                                            ullamcous cididt consectetur
-                                            adipiscing elit, seds do et eiusmod
-                                            tempor incididunt ut laborels dolore
-                                            magnarels alia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="testimonials-item">
-                                <div
-                                    class="content-card"
-                                    data-testimonials-item
-                                >
-                                    <figure class="testimonials-avatar-box">
-                                        <img
-                                            src="./assets/images/avatar-2.png"
-                                            alt="Jessica miller"
-                                            width="60"
-                                            data-testimonials-avatar
-                                        />
-                                    </figure>
-
-                                    <h4
-                                        class="h4 testimonials-item-title"
-                                        data-testimonials-title
-                                    >
-                                        Jessica miller
-                                    </h4>
-
-                                    <div
-                                        class="testimonials-text"
-                                        data-testimonials-text
-                                    >
-                                        <p>
-                                            Richard was hired to create a
-                                            corporate identity. We were very
-                                            pleased with the work done. She has
-                                            a lot of experience and is very
-                                            concerned about the needs of client.
-                                            Lorem ipsum dolor sit amet,
-                                            ullamcous cididt consectetur
-                                            adipiscing elit, seds do et eiusmod
-                                            tempor incididunt ut laborels dolore
-                                            magnarels alia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="testimonials-item">
-                                <div
-                                    class="content-card"
-                                    data-testimonials-item
-                                >
-                                    <figure class="testimonials-avatar-box">
-                                        <img
-                                            src="./assets/images/avatar-3.png"
-                                            alt="Emily evans"
-                                            width="60"
-                                            data-testimonials-avatar
-                                        />
-                                    </figure>
-
-                                    <h4
-                                        class="h4 testimonials-item-title"
-                                        data-testimonials-title
-                                    >
-                                        Emily evans
-                                    </h4>
-
-                                    <div
-                                        class="testimonials-text"
-                                        data-testimonials-text
-                                    >
-                                        <p>
-                                            Richard was hired to create a
-                                            corporate identity. We were very
-                                            pleased with the work done. She has
-                                            a lot of experience and is very
-                                            concerned about the needs of client.
-                                            Lorem ipsum dolor sit amet,
-                                            ullamcous cididt consectetur
-                                            adipiscing elit, seds do et eiusmod
-                                            tempor incididunt ut laborels dolore
-                                            magnarels alia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="testimonials-item">
-                                <div
-                                    class="content-card"
-                                    data-testimonials-item
-                                >
-                                    <figure class="testimonials-avatar-box">
-                                        <img
-                                            src="./assets/images/avatar-4.png"
-                                            alt="Henry william"
-                                            width="60"
-                                            data-testimonials-avatar
-                                        />
-                                    </figure>
-
-                                    <h4
-                                        class="h4 testimonials-item-title"
-                                        data-testimonials-title
-                                    >
-                                        Henry william
-                                    </h4>
-
-                                    <div
-                                        class="testimonials-text"
-                                        data-testimonials-text
-                                    >
-                                        <p>
-                                            Richard was hired to create a
-                                            corporate identity. We were very
-                                            pleased with the work done. She has
-                                            a lot of experience and is very
-                                            concerned about the needs of client.
-                                            Lorem ipsum dolor sit amet,
-                                            ullamcous cididt consectetur
-                                            adipiscing elit, seds do et eiusmod
-                                            tempor incididunt ut laborels dolore
-                                            magnarels alia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <!--
-          - testimonials modal
-        -->
-
-                    <!-- <div class="modal-container" data-modal-container>
-                        <div class="overlay" data-overlay></div>
-
-                        <section class="testimonials-modal">
-                            <button
-                                class="modal-close-btn"
-                                data-modal-close-btn
-                            >
-                                <ion-icon name="close-outline"></ion-icon>
-                            </button>
-
-                            <div class="modal-img-wrapper">
-                                <figure class="modal-avatar-box">
-                                    <img
-                                        src="./assets/images/avatar-1.png"
-                                        alt="Daniel lewis"
-                                        width="80"
-                                        data-modal-img
-                                    />
-                                </figure>
-
-                                <img
-                                    src="./assets/images/icon-quote.svg"
-                                    alt="quote icon"
-                                />
-                            </div>
-
-                            <div class="modal-content">
-                                <h4 class="h3 modal-title" data-modal-title>
-                                    Daniel lewis
-                                </h4>
-
-                                <time datetime="2021-06-14">14 June, 2021</time>
-
-                                <div data-modal-text>
-                                    <p>
-                                        Richard was hired to create a corporate
-                                        identity. We were very pleased with the
-                                        work done. She has a lot of experience
-                                        and is very concerned about the needs of
-                                        client. Lorem ipsum dolor sit amet,
-                                        ullamcous cididt consectetur adipiscing
-                                        elit, seds do et eiusmod tempor
-                                        incididunt ut laborels dolore magnarels
-                                        alia.
-                                    </p>
+                                <div class="timeline-role">
+                                    Ingénieur DevOps
                                 </div>
                             </div>
-                        </section>
-                    </div> -->
-
-                    <!--
-          - clients
-        -->
-
-                    <!-- <section class="clients">
-                        <h3 class="h3 clients-title">Clients</h3>
-
-                        <ul class="clients-list has-scrollbar">
-                            <li class="clients-item">
-                                <a href="#">
-                                    <img
-                                        src="./assets/images/logo-1-color.png"
-                                        alt="client logo"
-                                    />
-                                </a>
-                            </li>
-
-                            <li class="clients-item">
-                                <a href="#">
-                                    <img
-                                        src="./assets/images/logo-2-color.png"
-                                        alt="client logo"
-                                    />
-                                </a>
-                            </li>
-
-                            <li class="clients-item">
-                                <a href="#">
-                                    <img
-                                        src="./assets/images/logo-3-color.png"
-                                        alt="client logo"
-                                    />
-                                </a>
-                            </li>
-
-                            <li class="clients-item">
-                                <a href="#">
-                                    <img
-                                        src="./assets/images/logo-4-color.png"
-                                        alt="client logo"
-                                    />
-                                </a>
-                            </li>
-
-                            <li class="clients-item">
-                                <a href="#">
-                                    <img
-                                        src="./assets/images/logo-5-color.png"
-                                        alt="client logo"
-                                    />
-                                </a>
-                            </li>
-
-                            <li class="clients-item">
-                                <a href="#">
-                                    <img
-                                        src="./assets/images/logo-6-color.png"
-                                        alt="client logo"
-                                    />
-                                </a>
-                            </li>
-                        </ul>
-                    </section> -->
-                </article>
-
-                <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="formations">
-        <header>
-          <h2 class="h2 article-title">Formations</h2>
-        </header>
-
-        <div class="timelines-container" style="display:flex;justify-content:space-between;">
-
-          <!-- Formations & Certifications -->
-          <section class="timeline" style="width:48%">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3 clients-title">Formations & Certifications</h3>
-            </div>
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">DUT Informatique @IUT Charlemagne</h4>
-                  <span>(2018/2020) - 2 ans</span>
-                  <p class="timeline-text">Formation initiale sur l'algorithmique, la programmation, les bases de données, les systèmes d'exploitation</p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Master DevOps & Sécurité des Systèmes d’Information, (Alternance) @CESI</h4>
-                <span>(2020/2022) - 2 ans</span>
-                <p class="timeline-text">Formation approfondie sur différents outils d'automatisation</p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Formation RSSI, (Alternance) @UTT</h4>
-                <span>(2022/2023) - 1 an</span>
-                <p class="timeline-text">Formation approfondie en système d'information et en sécurité informatique</p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Certification ANSSI (SecNumAcadémie)</h4>
-                <p class="timeline-text">Formation en cybersécurité reconnue par l’État (RSSI)</p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Certification CKA (Certified Kubernetes Administrator)</h4>
-                <p class="timeline-text">Obtention de la certification CKA, validant la maîtrise de Kubernetes</p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Certification CAPA (Certified Argo CD Professional)</h4>
-                <p class="timeline-text">Certifié CAPA, expertise GitOps avec Argo Workflows, Rollouts & Events</p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Manage Kubernetes in Google Cloud Skill Badge</h4>
-                <p class="timeline-text">Badge Google Cloud attestant la gestion de clusters Kubernetes sur GCP</p>
-              </li>
-            </ol>
-          </section>
-
-          <!-- Expériences professionnelles -->
-          <section class="timeline" style="width:48%">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="briefcase-outline"></ion-icon>
-              </div>
-              <h3 class="h3 clients-title">Expériences professionnelles</h3>
-            </div>
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">Alternant DevOps @Inovea Conseil</h4>
-                  <span>2020/2023</span>
-                  <p class="timeline-text">Développement de fonctionnalités sur un CRM (Dolibarr), intégration d'une infrastructure d'intégration sous docker, déploiement d'outils de CI/CD</p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Ingénieur d'exploitation @ Equasens</h4>
-                <span>Depuis août 2023</span>
-                <p class="timeline-text">Intégration DevSecOps, Go, Kubernetes/Tanzu, CI/CD moderne, Terraform/Ansible, monitoring/alerting</p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Projet HomeLab (Terraform, Talos, Proxmox…)</h4>
-                <span>5 mois</span>
-                <p class="timeline-text">Déploiement et orchestration d’un cluster Talos + Proxmox avec Terraform, Cilium, Linstor, ArgoCD & Renovate</p>
-              </li>
-
-            </ol>
-          </section>
-
-        </div>
-      </article>
-
-                </article>
-
-                <!--
-        - #PORTFOLIO
-      -->
-
-                <article class="portfolio" data-page="projets">
-                    <header>
-                        <h2 class="h2 article-title">Projets</h2>
-                    </header>
-
-                    <section class="projects">
-                        <ul class="filter-list">
-                            <li class="filter-item">
-                                <button class="active" data-filter-btn>
-                                    All
-                                </button>
-                            </li>
-
-                            <li class="filter-item">
-                                <button data-filter-btn>Infrastructure</button>
-                            </li>
-
-                            <li class="filter-item">
-                                <button data-filter-btn>
-                                    Development
-                                </button>
-                            </li>
-
-                        </ul>
-
-                        <div class="filter-select-box">
-                            <button class="filter-select" data-select>
-                                <div class="select-value" data-selecct-value>
-                                    Select category
-                                </div>
-
-                                <div class="select-icon">
-                                    <ion-icon name="chevron-down"></ion-icon>
-                                </div>
-                            </button>
-
-                            <!-- <ul class="select-list">
-                                <li class="select-item">
-                                    <button data-select-item>All</button>
-                                </li>
-
-                                <li class="select-item">
-                                    <button data-select-item>Infrastructure</button>
-                                </li>
-
-                                <li class="select-item">
-                                    <button data-select-item>
-                                        Development
-                                    </button>
-                                </li>
-                            </ul> -->
+                            <span class="timeline-date">2019 → 2022</span>
                         </div>
-                        <ul class="project-list" id="github-projects">
-                            <!-- JS va injecter ici -->
-                        </ul>
-                        <button id="show-more-btn"
-                            class="form-btn"
-                        >
-                            <span>Afficher plus</span>
-                        </button>
-                    </section>
-                </article>
-
-                <!--
-        - #BLOG
-      -->
-
-                <article class="blog" data-page="blog">
-                    <header>
-                        <h2 class="h2 article-title">Blog</h2>
-                    </header>
-                    <section class="blog-posts">
-                        <ul class="blog-posts-list">
-                            <!-- Les posts seront chargés dynamiquement ici -->
-                        </ul>
-                    </section>
-                </article>
-
-                <!--
-        - #CONTACT
-      -->
-
-                <article class="contact" data-page="contact">
-                    <header>
-                        <h2 class="h2 article-title">Contact</h2>
-                    </header>
-
-                    <section class="mapbox" data-mapbox>
-                        <figure>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.849764546387!2d6.172403815674105!3d48.69205457926564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479498774db9a7d9%3A0xa3d7516df113ee58!2sNancy%2C%20France!5e0!3m2!1sfr!2sfr!4v1624879216230!5m2!1sfr!2sfr"
-                                width="400"
-                                height="300"
-                                loading="lazy"
-                            ></iframe>
-                        </figure>
-                    </section>
-
-                    <section class="contact-form">
-                        <h3 class="h3 form-title">Formulaire de contact</h3>
-
-                        <form action="#" class="form" data-form>
-                            <div class="input-wrapper">
-                                <input
-                                    type="text"
-                                    name="fullname"
-                                    class="form-input"
-                                    placeholder="John Doe"
-                                    required
-                                    data-form-input
-                                />
-
-                                <input
-                                    type="email"
-                                    name="email"
-                                    class="form-input"
-                                    placeholder="john.doe@example.com"
-                                    required
-                                    data-form-input
-                                />
+                        <div class="timeline-desc">
+                            Mise en place des premières pratiques DevOps et
+                            CI/CD. Administration Linux, automatisation,
+                            premiers déploiements docker et construction des
+                            pipelines d'intégration continue.
+                        </div>
+                        <div class="project-list">
+                            <div class="project-item">
+                                <span class="project-item-icon">▸</span>
+                                <div>
+                                    <div class="project-item-title">
+                                        Mise en place CI/CD
+                                    </div>
+                                    <div class="project-item-desc">
+                                        Construction des premières pipelines
+                                        CI/CD avec Jenkins. Standardisation des
+                                        processus de build, test et déploiement
+                                        sur une dizaine d'applications.
+                                    </div>
+                                    <div class="project-tags">
+                                        <span class="ptag">Jenkins</span>
+                                        <span class="ptag">Docker</span>
+                                        <span class="ptag">Kubernetes</span>
+                                        <span class="ptag">Helm</span>
+                                    </div>
+                                </div>
                             </div>
 
-                            <textarea
-                                name="message"
-                                class="form-input"
-                                placeholder="Votre message"
-                                required
-                                data-form-input
-                            ></textarea>
-
-                            <button
-                                class="form-btn"
-                                type="submit"
-                                disabled
-                                data-form-btn
-                            >
-                                <ion-icon name="paper-plane"></ion-icon>
-                                <span>Envoyer</span>
-                            </button>
-                        </form>
-                    </section>
-                </article>
+                            <div class="project-item">
+                                <span class="project-item-icon">▸</span>
+                                <div>
+                                    <div class="project-item-title">
+                                        Automatisation infrastructure — Ansible
+                                        + Terraform
+                                    </div>
+                                    <div class="project-item-desc">
+                                        Remplacement des processus manuels par
+                                        de l'Infrastructure as Code.
+                                        Provisioning Terraform et configuration
+                                        Ansible, réduction du temps de
+                                        déploiement d'une semaine à quelques
+                                        heures.
+                                    </div>
+                                    <div class="project-tags">
+                                        <span class="ptag">Terraform</span>
+                                        <span class="ptag">Ansible</span>
+                                        <span class="ptag">Linux</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </main>
+        </div>
 
-        <!--
-    - custom js link
-  -->
-        <script defer data-project="68739b5151499b88851b8143" src="https://cdn.jsdelivr.net/gh/litlyx/litlyx-js/browser/litlyx.js" data-host="track.florianspk.fr"></script>
-        <script src="./assets/js/proxy-rss.js"></script>
-        <script src="./assets/js/proxy-github.js"></script>
-        <script src="./assets/js/script.js"></script>
-        <!--
-    - ionicon link
-  -->
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-            nomodule
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        ></script>
+        <!-- EXPERTISE -->
+        <div class="container" id="expertise">
+            <div class="section-title fade-up">
+                <span class="hash">#</span> Expertise
+            </div>
+            <div class="section-desc fade-up">
+                Domaines de compétences approfondies en production
+            </div>
+            <div class="exp-grid">
+                <div class="exp-card fade-up">
+                    <div class="exp-card-header">
+                        <div class="exp-icon">☸️</div>
+                        <div>
+                            <div class="exp-card-title">Kubernetes avancé</div>
+                            <div class="exp-card-cat">Orchestration</div>
+                        </div>
+                    </div>
+                    <div class="exp-card-desc">
+                        Administration de clusters Talos Linux en production,
+                        Cluster API, isolation réseau Cilium, hardening CKS, GPU
+                        workloads.
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Talos Linux</span
+                        ><span class="exp-tag">Cluster API</span
+                        ><span class="exp-tag">Cilium</span
+                        ><span class="exp-tag">Helm</span
+                        ><span class="exp-tag">GPU</span>
+                    </div>
+                </div>
+                <div class="exp-card fade-up">
+                    <div class="exp-card-header">
+                        <div class="exp-icon">⚒️</div>
+                        <div>
+                            <div class="exp-card-title">GitOps &amp; CI/CD</div>
+                            <div class="exp-card-cat">Livraison continue</div>
+                        </div>
+                    </div>
+                    <div class="exp-card-desc">
+                        Pipelines GitOps avec ArgoCD, gestion des secrets via
+                        External Secrets Operator, automatisation des
+                        déploiements multi-environnements.
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">ArgoCD</span
+                        ><span class="exp-tag">GitHub Actions</span
+                        ><span class="exp-tag">ESO</span
+                        ><span class="exp-tag">Vault</span>
+                    </div>
+                </div>
+                <div class="exp-card fade-up">
+                    <div class="exp-card-header">
+                        <div class="exp-icon">👁️</div>
+                        <div>
+                            <div class="exp-card-title">Observabilité</div>
+                            <div class="exp-card-cat">
+                                Monitoring · Alerting
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp-card-desc">
+                        Stack kube-prometheus complète, Grafana, Loki, Tempo,
+                        SLO/SLI, Percona PMM pour PostgreSQL/MySQL.
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Prometheus</span
+                        ><span class="exp-tag">Grafana</span
+                        ><span class="exp-tag">Loki</span
+                        ><span class="exp-tag">Tempo</span>
+                    </div>
+                </div>
+                <div class="exp-card fade-up">
+                    <div class="exp-card-header">
+                        <div class="exp-icon">📑</div>
+                        <div>
+                            <div class="exp-card-title">
+                                Infrastructure as Code
+                            </div>
+                            <div class="exp-card-cat">Terraform · Ansible</div>
+                        </div>
+                    </div>
+                    <div class="exp-card-desc">
+                        Provisioning déclaratif GCP et Proxmox on-premise via
+                        Terraform. Migrations cloud complexes et gestion d'état
+                        à grande échelle.
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Terraform</span
+                        ><span class="exp-tag">Proxmox</span
+                        ><span class="exp-tag">GCP</span
+                        ><span class="exp-tag">Ansible</span>
+                    </div>
+                </div>
+                <div class="exp-card fade-up">
+                    <div class="exp-card-header">
+                        <div class="exp-icon">🔒</div>
+                        <div>
+                            <div class="exp-card-title">Sécurité K8s</div>
+                            <div class="exp-card-cat">DevSecOps</div>
+                        </div>
+                    </div>
+                    <div class="exp-card-desc">
+                        Hardening Kubernetes niveau CKS : AppArmor, Falco, RBAC
+                        granulaire, admission controllers, scanning Trivy,
+                        politiques réseau.
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Falco</span
+                        ><span class="exp-tag">OPA</span
+                        ><span class="exp-tag">Trivy</span
+                        ><span class="exp-tag">RBAC</span>
+                    </div>
+                </div>
+                <div class="exp-card fade-up">
+                    <div class="exp-card-header">
+                        <div class="exp-icon">🧑‍💻</div>
+                        <div>
+                            <div class="exp-card-title">Développement</div>
+                            <div class="exp-card-cat">Open Source</div>
+                        </div>
+                    </div>
+                    <div class="exp-card-desc">
+                        Avant d'avoir mon appétence pour le milieu de
+                        l'architeture system, j'étais développeur backend au
+                        début Java / PHP, puis j'ai réalisé d'autre projet en GO
+                        / Python / Ruby
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Go</span
+                        ><span class="exp-tag">Python</span
+                        ><span class="exp-tag">PHP</span
+                        ><span class="exp-tag">CNCF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOMELAB -->
+        <div style="background: var(--bg2)">
+            <div class="container" id="homelab">
+                <div class="section-title fade-up">
+                    <span class="hash">#</span> Homelab
+                </div>
+                <div class="section-desc fade-up">
+                    wheezy.fr — cluster Kubernetes talos self-hosted sur
+                    Proxmox, géré en GitOps
+                </div>
+                <div class="homelab-layout">
+                    <div class="code-block fade-up">
+                        <div class="code-header">
+                            <div class="dot dot-red"></div>
+                            <div class="dot dot-yellow"></div>
+                            <div class="dot dot-green"></div>
+                            <span class="code-filename"
+                                >kubectl get nodes -o wide</span
+                            >
+                        </div>
+                        <div class="code-body">
+                            <span class="c-comment"
+                                ># Cluster Talos Linux / Proxmox</span
+                            ><br /><br />
+                            <span class="c-key">NAME</span>
+                            <span class="c-val">STATUS</span>
+                            <span class="c-type">ROLES</span>
+                            <span class="c-op">VERSION</span><br />
+                            <span class="c-str">c0</span>
+                            <span class="c-val">Ready</span>
+                            <span class="c-type">control-plane</span>
+                            <span class="c-op">v1.35.0</span><br />
+                            <span class="c-str">w1</span>
+                            <span class="c-val">Ready</span>
+                            <span class="c-type">worker</span>
+                            <span class="c-op">v1.35.0</span><br />
+                            <span class="c-str">w2</span>
+                            <span class="c-val">Ready</span>
+                            <span class="c-type">worker</span>
+                            <span class="c-op">v1.35.0</span><br />
+                            <span class="c-str">w3</span>
+                            <span class="c-val">Ready</span>
+                            <span class="c-type">worker</span>
+                            <span class="c-op">v1.35.0</span><br />
+                            <span class="c-str">w4</span>
+                            <span class="c-val">Ready</span>
+                            <span class="c-type">worker,gpu</span>
+                            <span class="c-op">v1.35.0</span><br /><br />
+                        </div>
+                    </div>
+                    <div class="homelab-desc fade-up">
+                        <p>
+                            Un cluster
+                            <strong>Kubernetes production-grade</strong>
+                            self-hosted sous le domaine
+                            <strong>wheezy.fr</strong>, opéré 24/7 sur Proxmox.
+                            Chaque service tourne sur ce cluster — c'est mon
+                            terrain d'expérimentation en conditions réelles.
+                        </p>
+                        <p>
+                            Provisioning via <strong>Terraform</strong>,
+                            déploiements GitOps avec <strong>ArgoCD</strong>,
+                            stockage distribué <strong>LINSTOR/Piraeus</strong>,
+                            sauvegardes CSI avec <strong>Velero</strong>, SSO
+                            centralisé <strong>Authentik</strong>.
+                        </p>
+                        <div class="stat-row">
+                            <div class="stat-box">
+                                <div class="stat-box-num">5</div>
+                                <div class="stat-box-label">nodes actifs</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-box-num">50+</div>
+                                <div class="stat-box-label">apps déployées</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PROJETS GITHUB (fetch live) -->
+        <div style="background: var(--bg2)">
+            <div class="container" id="projets">
+                <div class="section-title fade-up">
+                    <span class="hash">#</span> Projets GitHub
+                </div>
+                <div class="section-desc fade-up">Repositories publics</div>
+                <div id="github-grid">
+                    <div class="gh-loading">
+                        <span class="spinner"></span> Chargement des repos...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 style="display: none">Consultant Kubernetes freelance</h2>
+        <h2 style="display: none">Audit et formation Kubernetes</h2>
+        <!-- SERVICES / WHOAMI SEO -->
+        <div class="container" id="services">
+            <div class="section-title fade-up">
+                <span class="hash">#</span> Services Kubernetes & DevOps
+            </div>
+
+            <div class="terminal-window fade-up">
+                <div class="terminal-bar">
+                    <div class="dot dot-red"></div>
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-green"></div>
+                    <span class="terminal-title"
+                        >florian-spk — services.yaml</span
+                    >
+                </div>
+
+                <div class="terminal-body">
+                    <div class="t-line">
+                        <span class="t-prompt">❯</span>
+                        <span class="t-cmd">cat services.yaml</span>
+                    </div>
+
+                    <div class="t-blank"></div>
+
+                    <!-- H2 SEO -->
+                    <div class="t-line">
+                        <span class="t-out">
+                            <span style="color: var(--cyan)">title:</span>
+                            <span style="color: var(--green)">
+                                Consultant Kubernetes freelance
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="t-line">
+                        <span class="t-out">
+                            <span style="color: var(--cyan)">location:</span>
+                            <span style="color: var(--yellow)">
+                                France · Remote Europe
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="t-line">
+                        <span class="t-out">
+                            <span style="color: var(--cyan)"
+                                >availability:</span
+                            >
+                            <span style="color: var(--purple)">
+                                Soirs · Week-ends · Missions ponctuelles
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="t-blank"></div>
+
+                    <!-- SERVICES -->
+                    <div class="t-line">
+                        <span class="t-out">
+                            <span style="color: var(--cyan)">services:</span>
+                        </span>
+                    </div>
+
+                    <div class="t-line">
+                        <span class="t-out">
+                            &nbsp;&nbsp;-
+                            <span style="color: var(--green)"
+                                >Audit Kubernetes</span
+                            >
+                            <span style="color: var(--text-muted)">
+                                # sécurité, performance, coûts, best practices
+                                (CKS)
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="t-line">
+                        <span class="t-out">
+                            &nbsp;&nbsp;-
+                            <span style="color: var(--green)"
+                                >Migration vers Kubernetes</span
+                            >
+                            <span style="color: var(--text-muted)">
+                                # VM → containers, GitOps, modernisation infra
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="t-line">
+                        <span class="t-out">
+                            &nbsp;&nbsp;-
+                            <span style="color: var(--green)"
+                                >Formation Kubernetes</span
+                            >
+                            <span style="color: var(--text-muted)">
+                                # équipes DevOps / dev, production, sécurité
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="t-line">
+                        <span class="t-out">
+                            &nbsp;&nbsp;-
+                            <span style="color: var(--green)"
+                                >Accompagnement SRE / DevOps</span
+                            >
+                            <span style="color: var(--text-muted)">
+                                # CI/CD, observabilité, SLO/SLI, infra as code
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="t-blank"></div>
+
+                    <!-- H2 SEO secondaires -->
+                    <div class="t-line">
+                        <span class="t-out">
+                            <span style="color: var(--cyan)">expertise:</span>
+                            <span style="color: var(--purple)">
+                                Audit et optimisation Kubernetes · Formation
+                                Kubernetes entreprise
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="t-blank"></div>
+
+                    <div class="t-line">
+                        <span class="t-prompt">❯</span>
+                        <span class="t-cmd" style="opacity: 0.4">▌</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div style="background: var(--bg2)">
+            <div class="container" id="contact">
+                <div class="contact-card fade-up">
+                    <div class="contact-title">
+                        Ouvrons une <span>connexion</span>
+                    </div>
+                    <div class="contact-sub">
+                        Disponible en freelance soirs et weekend<br />
+                    </div>
+                    <div class="contact-links">
+                        <a
+                            href="mailto:florian@florianspk.fr"
+                            class="btn btn-green"
+                            >📬 florian@florianspk.fr</a
+                        >
+                        <a
+                            href="https://linkedin.com/in/florian-spick"
+                            target="_blank"
+                            class="btn btn-outline"
+                            >LinkedIn</a
+                        >
+                        <a
+                            href="https://github.com/florianspk"
+                            target="_blank"
+                            class="btn btn-outline"
+                            >GitHub</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <span>florian-spk · SRE · DevOps · Kubernetes</span>
+            <span
+                ><a href="https://florianspk.fr" target="_blank"
+                    >florianspk.fr</a
+                >
+                · self-hosted on Talos/Proxmox</span
+            >
+        </footer>
+
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
