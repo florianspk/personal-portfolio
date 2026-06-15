@@ -1,599 +1,573 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
     <head>
-        <title>
-            Consultant Kubernetes Freelance | DevOps SRE | CKA CKS | Audit &
-            Formation
-        </title>
-
         <meta charset="UTF-8" />
-        <meta
-            name="description"
-            content="Consultant Kubernetes freelance (CKA, CKS). Audit, migration et formation Kubernetes pour entreprises. Disponible soirs, week-ends et missions ponctuelles."
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://florianspk.fr" />
+        <!-- ── Primary SEO ── -->
+        <title>Florian Spick — Ingénieur DevOps / SRE · Expert Kubernetes CKA CKS</title>
+        <meta name="description" content="Ingénieur DevOps / SRE avec 6 ans d'expérience. Expert Kubernetes certifié CKA &amp; CKS. Migration d'infrastructure cloud-native, observabilité, GitOps, sécurité. Basé en Grand Est, disponible en remote et en freelance." />
+        <meta name="author" content="Florian Spick" />
+        <meta name="keywords" content="DevOps, SRE, Kubernetes, CKA, CKS, ArgoCD, Terraform, GitOps, Prometheus, Grafana, Talos Linux, Cilium, Helm, ingénieur infrastructure, freelance Kubernetes, consultant Kubernetes" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="canonical" href="https://florianspk.fr/" />
 
-        <!-- Open Graph -->
-        <meta
-            property="og:title"
-            content="Consultant Kubernetes Freelance | Florian Spk"
-        />
-        <meta
-            property="og:description"
-            content="Audit, migration et formation Kubernetes. Expert certifié CKA/CKS."
-        />
+        <!-- ── Open Graph ── -->
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://florianspk.fr" />
+        <meta property="og:url" content="https://florianspk.fr/" />
+        <meta property="og:title" content="Florian Spick — Ingénieur DevOps / SRE | Expert Kubernetes CKA CKS" />
+        <meta property="og:description" content="6 ans d'expérience sur des infrastructures Kubernetes en production. Certifié CKA, CKS, CAPA, GKE Professional. Migration cloud-native, observabilité, GitOps." />
+        <meta property="og:image" content="https://florianspk.fr/assets/og-preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Florian Spick — Ingénieur DevOps / SRE, Expert Kubernetes" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:site_name" content="florianspk.fr" />
 
-        <!-- Schema.org -->
+        <!-- ── Twitter / X Card ── -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Florian Spick — Ingénieur DevOps / SRE | Expert Kubernetes" />
+        <meta name="twitter:description" content="6 ans d'expérience Kubernetes en production. CKA, CKS, CAPA, GKE Pro. Migration cloud-native, GitOps, observabilité." />
+        <meta name="twitter:image" content="https://florianspk.fr/assets/og-preview.png" />
+        <meta name="twitter:image:alt" content="Florian Spick — Portfolio DevOps / SRE" />
+
+        <!-- ── Schema.org JSON-LD ── -->
         <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Person",
-                "name": "Florian Spk",
-                "jobTitle": "Consultant Kubernetes Freelance",
-                "url": "https://florianspk.fr",
-                "sameAs": [
-                    "https://github.com/florianspk",
-                    "https://linkedin.com/in/florianspk"
-                ],
-                "knowsAbout": [
-                    "Kubernetes",
-                    "DevOps",
-                    "SRE",
-                    "Terraform",
-                    "CI/CD"
-                ]
-            }
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "@id": "https://florianspk.fr/#person",
+                    "name": "Florian Spick",
+                    "givenName": "Florian",
+                    "familyName": "Spick",
+                    "jobTitle": "Ingénieur DevOps / SRE",
+                    "description": "Ingénieur DevOps et SRE avec 6 ans d'expérience sur des infrastructures Kubernetes en production. Expert certifié CKA et CKS, spécialisé en migration cloud-native, observabilité et sécurité.",
+                    "url": "https://florianspk.fr/",
+                    "email": "florian@florianspk.fr",
+                    "image": "https://florianspk.fr/assets/og-preview.png",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressRegion": "Grand Est",
+                        "addressCountry": "FR"
+                    },
+                    "sameAs": [
+                        "https://github.com/florianspk",
+                        "https://linkedin.com/in/florian-spick",
+                        "https://blog.wheezy.fr"
+                    ],
+                    "knowsAbout": [
+                        "Kubernetes", "DevOps", "Site Reliability Engineering", "Terraform",
+                        "ArgoCD", "GitOps", "CI/CD", "Prometheus", "Grafana", "Loki",
+                        "Cilium", "Talos Linux", "Helm", "Docker", "Linux", "Python", "Go"
+                    ],
+                    "hasCredential": [
+                        {
+                            "@type": "EducationalOccupationalCredential",
+                            "credentialCategory": "certification",
+                            "name": "Certified Kubernetes Administrator (CKA)",
+                            "recognizedBy": { "@type": "Organization", "name": "CNCF / Linux Foundation" }
+                        },
+                        {
+                            "@type": "EducationalOccupationalCredential",
+                            "credentialCategory": "certification",
+                            "name": "Certified Kubernetes Security Specialist (CKS)",
+                            "recognizedBy": { "@type": "Organization", "name": "CNCF / Linux Foundation" }
+                        },
+                        {
+                            "@type": "EducationalOccupationalCredential",
+                            "credentialCategory": "certification",
+                            "name": "Certified Argo Project Associate (CAPA)",
+                            "recognizedBy": { "@type": "Organization", "name": "Linux Foundation" }
+                        },
+                        {
+                            "@type": "EducationalOccupationalCredential",
+                            "credentialCategory": "certification",
+                            "name": "Google Kubernetes Engine Professional",
+                            "recognizedBy": { "@type": "Organization", "name": "Google Cloud" }
+                        }
+                    ],
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "Equasens",
+                        "address": { "@type": "PostalAddress", "addressRegion": "Grand Est", "addressCountry": "FR" }
+                    },
+                    "alumniOf": {
+                        "@type": "Organization",
+                        "name": "Inovea Conseil"
+                    }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://florianspk.fr/#website",
+                    "url": "https://florianspk.fr/",
+                    "name": "Florian Spick — Portfolio DevOps / SRE",
+                    "description": "Portfolio et CV en ligne de Florian Spick, ingénieur DevOps et SRE expert Kubernetes.",
+                    "inLanguage": "fr-FR",
+                    "author": { "@id": "https://florianspk.fr/#person" },
+                    "potentialAction": {
+                        "@type": "ReadAction",
+                        "target": "https://florianspk.fr/"
+                    }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://florianspk.fr/#webpage",
+                    "url": "https://florianspk.fr/",
+                    "name": "Florian Spick — Ingénieur DevOps / SRE · Expert Kubernetes CKA CKS",
+                    "isPartOf": { "@id": "https://florianspk.fr/#website" },
+                    "about": { "@id": "https://florianspk.fr/#person" },
+                    "inLanguage": "fr-FR",
+                    "breadcrumb": {
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://florianspk.fr/" }
+                        ]
+                    }
+                }
+            ]
+        }
         </script>
+
+        <!-- ── Performance hints ── -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="dns-prefetch" href="https://api.github.com" />
+        <link rel="dns-prefetch" href="https://github.com" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
     <body>
         <!-- NAV -->
-        <nav>
-            <div class="nav-logo"><span>~/</span>florian-spk</div>
-            <ul class="nav-links">
+        <nav id="navbar" role="navigation" aria-label="Navigation principale">
+            <div class="nav-logo"><span>~/</span>florian-spick</div>
+            <ul class="nav-links" role="list">
                 <li><a href="#certifs">Certifications</a></li>
                 <li><a href="#experiences">Expériences</a></li>
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#homelab">Homelab</a></li>
                 <li><a href="#projets">Projets</a></li>
-                <li>
-                    <a href="https://blog.wheezy.fr" target="_blank">Blog</a>
-                </li>
+                <li><a href="https://blog.wheezy.fr" target="_blank" rel="noopener noreferrer">Blog</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Passer en mode clair">
+                <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
 
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu mobile">
+            <a href="#certifs" class="mobile-link">Certifications</a>
+            <a href="#experiences" class="mobile-link">Expériences</a>
+            <a href="#expertise" class="mobile-link">Expertise</a>
+            <a href="#homelab" class="mobile-link">Homelab</a>
+            <a href="#projets" class="mobile-link">Projets</a>
+            <a href="https://blog.wheezy.fr" target="_blank" rel="noopener noreferrer" class="mobile-link">Blog ↗</a>
+            <a href="#contact" class="btn btn-green" style="text-align:center">→ Me contacter</a>
+        </div>
+
+        <main id="main-content">
+
         <!-- HERO -->
-        <section id="hero">
-            <div class="hero-prompt">
-                <span class="arrow">❯</span>
-                <span class="path">~/florian-spk</span>
-                <span class="branch"> git:(main)</span>
-            </div>
-            <h1 class="hero-title">
-                Florian Spk<br />
-                <span class="role"> Freelance · SRE · DevOps Engineer </span
-                ><span class="cursor"></span>
-            </h1>
+        <section id="hero" aria-labelledby="hero-heading">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <h1 id="hero-heading" class="hero-title">
+                        Florian Spick<br />
+                        <span class="role">DevOps · SRE · Kubernetes Engineer</span><span class="cursor" aria-hidden="true"></span>
+                    </h1>
 
-            <p class="hero-sub">
-                Expert Kubernetes freelance spécialisé en
-                <span class="hl">audit</span>,
-                <span class="hl">migration</span> et
-                <span class="hl">formation</span>.<br />
-                J'accompagne les entreprises sur leurs infrastructures
-                Kubernetes en production.
-            </p>
+                    <p class="hero-sub">
+                        6 ans d'expérience sur des infrastructures Kubernetes en production.<br />
+                        Migration legacy → cloud-native, observabilité, sécurité, GitOps.<br />
+                        <span class="hl">Certifié CKA &amp; CKS</span> — expert reconnu dans l'écosystème CNCF.
+                    </p>
 
-            <p class="hero-sub" style="margin-top: 10px">
-                Basé en France — disponible en remote, soirs, week-ends et
-                missions ponctuelles.
-            </p>
-            <div class="hero-badges">
-                <span class="badge badge-green">✓ CKA</span>
-                <span class="badge badge-green">✓ CKS</span>
-                <span class="badge badge-cyan">✓ CAPA</span>
-                <span class="badge badge-yellow">✓ Google GKE</span>
-                <span class="badge badge-purple">6 ans d'XP</span>
+                    <p class="hero-location">
+                        <span class="loc-dot" aria-hidden="true"></span>
+                        Grand Est, France · Remote Europe · Ouvert CDI &amp; missions freelance
+                    </p>
+
+                    <div class="hero-badges" role="list" aria-label="Certifications et expérience">
+                        <span class="badge badge-green" role="listitem">✓ CKA</span>
+                        <span class="badge badge-green" role="listitem">✓ CKS</span>
+                        <span class="badge badge-cyan" role="listitem">✓ CAPA</span>
+                        <span class="badge badge-yellow" role="listitem">✓ Google GKE Pro</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-green">→ Me contacter</a>
+                        <a href="assets/CV-Florian-Spick-2026-FR.pdf" download class="btn btn-cv-hero">↓ CV PDF</a>
+                        <a href="https://github.com/florianspk" target="_blank" rel="noopener noreferrer" class="btn btn-outline">⎇ GitHub</a>
+                        <a href="https://blog.wheezy.fr" target="_blank" rel="noopener noreferrer" class="btn btn-outline">✍ Blog</a>
+                    </div>
+                </div>
+
+                <div class="hero-photo">
+                    <img src="assets/photo_portfolio.jpg" alt="Florian Spick — Ingénieur DevOps / SRE" width="280" height="280" />
+                </div>
             </div>
-            <div class="hero-actions">
-                <a href="#contact" class="btn btn-green">→ Me contacter</a>
-                <a href="#experiences" class="btn btn-outline"
-                    >Voir l'expérience</a
-                >
-                <a
-                    href="https://github.com/florianspk"
-                    target="_blank"
-                    class="btn btn-outline"
-                    >⎇ GitHub</a
-                >
+
+            <div class="hero-stats fade-up" role="list" aria-label="Statistiques clés">
+                <div class="stat-item" role="listitem">
+                    <div class="stat-num">6+</div>
+                    <div class="stat-label">ans d'expérience</div>
+                </div>
+                <div class="stat-div" aria-hidden="true"></div>
+                <div class="stat-item" role="listitem">
+                    <div class="stat-num">4</div>
+                    <div class="stat-label">certifications</div>
+                </div>
+                <div class="stat-div" aria-hidden="true"></div>
+                <div class="stat-item" role="listitem">
+                    <div class="stat-num">1000+</div>
+                    <div class="stat-label">VMs migrées</div>
+                </div>
+                <div class="stat-div" aria-hidden="true"></div>
+                <div class="stat-item" role="listitem">
+                    <div class="stat-num">50+</div>
+                    <div class="stat-label">apps en production</div>
+                </div>
             </div>
         </section>
 
         <!-- CERTIFICATIONS -->
-        <div class="container" id="certifs">
-            <div class="section-title fade-up">
-                <span class="hash">#</span> Certifications
-            </div>
-            <div class="section-desc fade-up">
-                4 certifications actives — Kubernetes, GitOps, Google Cloud
-            </div>
-            <div class="certifs-grid">
-                <div class="certif-card fade-up">
-                    <div class="certif-header">
-                        <div class="certif-badge-big">CKA</div>
+        <section class="section-bg-light" id="certifs" aria-labelledby="certifs-heading">
+            <div class="container">
+                <h2 id="certifs-heading" class="section-title fade-up">
+                    <span class="hash" aria-hidden="true">#</span> Certifications
+                </h2>
+                <p class="section-desc fade-up">4 certifications actives — Kubernetes, GitOps, Google Cloud</p>
+                <div class="certifs-grid" role="list">
+                    <article class="certif-card fade-up" role="listitem">
+                        <img src="assets/badges/cka.png" alt="Badge CKA — Certified Kubernetes Administrator" class="certif-img" width="100" height="100" />
+                        <h3 class="certif-name">Certified Kubernetes Administrator</h3>
+                        <p class="certif-org">CNCF · Linux Foundation</p>
                         <span class="certif-level">Expert</span>
-                    </div>
-                    <div class="certif-name">
-                        Certified Kubernetes Administrator
-                    </div>
-                    <div class="certif-org">CNCF · Linux Foundation</div>
-                </div>
-                <div class="certif-card fade-up">
-                    <div class="certif-header">
-                        <div class="certif-badge-big">CKS</div>
+                    </article>
+                    <article class="certif-card fade-up" role="listitem">
+                        <img src="assets/badges/CKS.png" alt="Badge CKS — Certified Kubernetes Security Specialist" class="certif-img" width="100" height="100" />
+                        <h3 class="certif-name">Certified Kubernetes Security Specialist</h3>
+                        <p class="certif-org">CNCF · Linux Foundation</p>
                         <span class="certif-level">Expert</span>
-                    </div>
-                    <div class="certif-name">
-                        Certified Kubernetes Security Specialist
-                    </div>
-                    <div class="certif-org">CNCF · Linux Foundation</div>
-                </div>
-                <div class="certif-card fade-up">
-                    <div class="certif-header">
-                        <div class="certif-badge-big">CAPA</div>
-                        <span class="certif-level">Associate</span>
-                    </div>
-                    <div class="certif-name">
-                        Certified Argo Project Associate
-                    </div>
-                    <div class="certif-org">Linux Foundation</div>
-                </div>
-                <div class="certif-card fade-up">
-                    <div class="certif-header">
-                        <div
-                            class="certif-badge-big"
-                            style="color: var(--yellow)"
-                        >
-                            GKE
-                        </div>
-                        <span
-                            class="certif-level"
-                            style="
-                                color: var(--yellow);
-                                border-color: #9e7a1f;
-                                background: rgba(227, 179, 65, 0.08);
-                            "
-                            >Pro</span
-                        >
-                    </div>
-                    <div class="certif-name">
-                        Google Kubernetes Engine Professional
-                    </div>
-                    <div class="certif-org">Google Cloud</div>
+                    </article>
+                    <article class="certif-card fade-up" role="listitem">
+                        <img src="assets/badges/CAPA.png" alt="Badge CAPA — Certified Argo Project Associate" class="certif-img" width="100" height="100" />
+                        <h3 class="certif-name">Certified Argo Project Associate</h3>
+                        <p class="certif-org">Linux Foundation</p>
+                        <span class="certif-level certif-level-orange">Associate</span>
+                    </article>
+                    <article class="certif-card fade-up" role="listitem">
+                        <img src="assets/badges/kubernetes-gcp.png" alt="Badge GKE Professional — Google Kubernetes Engine" class="certif-img" width="100" height="100" />
+                        <h3 class="certif-name">Google Kubernetes Engine Professional</h3>
+                        <p class="certif-org">Google Cloud</p>
+                        <span class="certif-level certif-level-blue">Professional</span>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- EXPÉRIENCES CDI -->
-        <div style="background: var(--bg2)">
-            <div class="container" id="experiences">
-                <div class="section-title fade-up">
-                    <span class="hash">#</span> Expériences
-                </div>
-                <div class="section-desc fade-up">
-                    Projets réalisés en production lors de mes postes
-                </div>
+        <!-- EXPÉRIENCES -->
+        <section class="section-bg-dark" id="experiences" aria-labelledby="experiences-heading">
+            <div class="container">
+                <h2 id="experiences-heading" class="section-title fade-up">
+                    <span class="hash" aria-hidden="true">#</span> Expériences
+                </h2>
+                <p class="section-desc fade-up">Projets réalisés en production lors de mes postes</p>
 
                 <div class="timeline">
-                    <!-- Poste 2 — le plus récent -->
-                    <div class="timeline-item fade-up">
-                        <div class="timeline-header">
+                    <!-- Poste actuel -->
+                    <article class="timeline-item fade-up">
+                        <header class="timeline-header">
                             <div>
-                                <div class="timeline-company">
-                                    ⬡ Equasens &nbsp;·&nbsp; Grand Est
-                                </div>
-                                <div class="timeline-role">
-                                    Ingénieur DevOps / SRE
-                                </div>
+                                <p class="timeline-company">⬡ Equasens · Grand Est</p>
+                                <h3 class="timeline-role">Ingénieur DevOps / SRE</h3>
                             </div>
-                            <span class="timeline-date">2022 → présent</span>
-                        </div>
-                        <div class="timeline-desc">
-                            Responsable de l'infrastructure Kubernetes en
-                            production : migration legacy, observabilité,
-                            sécurité et déploiement de workloads IA/GPU.
-                            Autonomie complète sur les choix d'architecture et
-                            de tooling.
-                        </div>
-                        <div class="project-list">
-                            <div class="project-item">
-                                <span class="project-item-icon">▸</span>
+                            <time class="timeline-date" datetime="2022">2022 → présent</time>
+                        </header>
+                        <p class="timeline-desc">
+                            Responsable de l'infrastructure Kubernetes en production : migration legacy, observabilité, sécurité et déploiement de workloads IA/GPU. Autonomie complète sur les choix d'architecture et de tooling.
+                        </p>
+                        <ul class="project-list">
+                            <li class="project-item">
+                                <span class="project-item-icon" aria-hidden="true">▸</span>
                                 <div>
-                                    <div class="project-item-title">
-                                        Inférence GPU sur Kubernetes
-                                    </div>
-                                    <div class="project-item-desc">
-                                        Déploiement de workloads d'inférence ML
-                                        sur GPU NVIDIA en production.
-                                        Configuration du device plugin
-                                        Kubernetes, isolation des ressources GPU
-                                        par namespace, scheduling prioritaire et
-                                        monitoring des métriques DCGM via
-                                        Prometheus.
-                                    </div>
-                                    <div class="project-tags">
-                                        <span class="ptag"
-                                            >NVIDIA GPU Operator</span
-                                        >
-                                        <span class="ptag">DCGM Exporter</span>
-                                        <span class="ptag">Prometheus</span>
-                                        <span class="ptag"
-                                            >Resource Quotas</span
-                                        >
-                                        <span class="ptag"
-                                            >Taints/Tolerations</span
-                                        >
-                                    </div>
+                                    <h4 class="project-item-title">Inférence GPU sur Kubernetes</h4>
+                                    <p class="project-item-desc">
+                                        Déploiement de workloads d'inférence ML sur GPU NVIDIA en production. Configuration du device plugin Kubernetes, isolation des ressources GPU par namespace, scheduling prioritaire et monitoring des métriques DCGM via Prometheus.
+                                    </p>
+                                    <ul class="project-tags" aria-label="Technologies">
+                                        <li class="ptag">NVIDIA GPU Operator</li>
+                                        <li class="ptag">DCGM Exporter</li>
+                                        <li class="ptag">Prometheus</li>
+                                        <li class="ptag">Resource Quotas</li>
+                                        <li class="ptag">Taints/Tolerations</li>
+                                    </ul>
                                 </div>
-                            </div>
-
-                            <div class="project-item">
-                                <span class="project-item-icon">▸</span>
+                            </li>
+                            <li class="project-item">
+                                <span class="project-item-icon" aria-hidden="true">▸</span>
                                 <div>
-                                    <div class="project-item-title">
-                                        Stack de gestion des logs — Loki
-                                    </div>
-                                    <div class="project-item-desc">
-                                        Déploiement et opération d'une stack
-                                        Loki distribuée (microservices) pour
-                                        centraliser les logs de l'ensemble du
-                                        cluster. Intégration Promtail, pipelines
-                                        de parsing, dashboards Grafana et
-                                        alertes LogQL sur les erreurs critiques.
-                                    </div>
-                                    <div class="project-tags">
-                                        <span class="ptag">Loki</span>
-                                        <span class="ptag">Promtail</span>
-                                        <span class="ptag">Grafana</span>
-                                        <span class="ptag">LogQL</span>
-                                        <span class="ptag"
-                                            >S3 / Object Storage</span
-                                        >
-                                    </div>
+                                    <h4 class="project-item-title">Stack de gestion des logs — Loki</h4>
+                                    <p class="project-item-desc">
+                                        Déploiement et opération d'une stack Loki distribuée (microservices) pour centraliser les logs de l'ensemble du cluster. Collecte via Alloy, pipelines de parsing, dashboards Grafana et alertes sur les erreurs critiques.
+                                    </p>
+                                    <ul class="project-tags" aria-label="Technologies">
+                                        <li class="ptag">Loki</li>
+                                        <li class="ptag">Promtail</li>
+                                        <li class="ptag">Grafana</li>
+                                        <li class="ptag">Alloy</li>
+                                        <li class="ptag">S3 / Object Storage</li>
+                                    </ul>
                                 </div>
-                            </div>
-
-                            <div class="project-item">
-                                <span class="project-item-icon">▸</span>
+                            </li>
+                            <li class="project-item">
+                                <span class="project-item-icon" aria-hidden="true">▸</span>
                                 <div>
-                                    <div class="project-item-title">
-                                        Migration infrastructure legacy →
-                                        Kubernetes
-                                    </div>
-                                    <div class="project-item-desc">
-                                        Migration complète d'une infrastructure
-                                        VM legacy (bare-metal OVH / 1000 VMs
-                                        sous vmware) vers un cluster Kubernetes.
-                                        Containerisation des applications,
-                                        définition des manifests Helm, mise en
-                                        place du GitOps ArgoCD et gestion des
-                                        données stateful avec opérateurs dédiés.
-                                    </div>
-                                    <div class="project-tags">
-                                        <span class="ptag">Kubernetes</span>
-                                        <span class="ptag">Helm</span>
-                                        <span class="ptag">ArgoCD</span>
-                                        <span class="ptag">Terraform</span>
-                                        <span class="ptag">CloudNativePG</span>
-                                        <span class="ptag">Velero</span>
-                                    </div>
+                                    <h4 class="project-item-title">Migration infrastructure legacy → Kubernetes</h4>
+                                    <p class="project-item-desc">
+                                        Migration complète d'une infrastructure VM legacy (bare-metal OVH / 1000 VMs sous VMware) vers un cluster Kubernetes. Conteneurisation des applications, définition des manifests Helm, mise en place du GitOps ArgoCD et gestion des données stateful avec opérateurs dédiés.
+                                    </p>
+                                    <ul class="project-tags" aria-label="Technologies">
+                                        <li class="ptag">Kubernetes</li>
+                                        <li class="ptag">Helm</li>
+                                        <li class="ptag">ArgoCD</li>
+                                        <li class="ptag">Terraform</li>
+                                        <li class="ptag">CloudNativePG</li>
+                                        <li class="ptag">Velero</li>
+                                    </ul>
                                 </div>
-                            </div>
-
-                            <div class="project-item">
-                                <span class="project-item-icon">▸</span>
+                            </li>
+                            <li class="project-item">
+                                <span class="project-item-icon" aria-hidden="true">▸</span>
                                 <div>
-                                    <div class="project-item-title">
-                                        Administration des BDD (Postgres / Mysql
-                                        / MongoDB)
-                                    </div>
-                                    <div class="project-item-desc">
-                                        Administration de BDD sur des VM, mais
-                                        également migration de ces BDD vers une
-                                        infrastructure conteneurisé, avec mise
-                                        en place de tunning et d'observabilité
-                                        celon les besoins
-                                    </div>
-                                    <div class="project-tags">
-                                        <span class="ptag">DBA</span>
-                                        <span class="ptag">Kubernetes</span>
-                                        <span class="ptag">CNPG</span>
-                                        <span class="ptag"
-                                            >Mariadb Operator</span
-                                        >
-                                        <span class="ptag">CloudNativePG</span>
-                                    </div>
+                                    <h4 class="project-item-title">Administration BDD (Postgres / MySQL / MongoDB)</h4>
+                                    <p class="project-item-desc">
+                                        Administration de bases de données sur VMs puis migration vers une infrastructure conteneurisée. Mise en place du tuning et de l'observabilité selon les besoins métier.
+                                    </p>
+                                    <ul class="project-tags" aria-label="Technologies">
+                                        <li class="ptag">DBA</li>
+                                        <li class="ptag">Kubernetes</li>
+                                        <li class="ptag">CNPG</li>
+                                        <li class="ptag">MariaDB Operator</li>
+                                        <li class="ptag">CloudNativePG</li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </li>
+                        </ul>
+                    </article>
 
-                    <!-- Poste 1 — précédent -->
-                    <div class="timeline-item fade-up">
-                        <div class="timeline-header">
+                    <!-- Poste précédent -->
+                    <article class="timeline-item fade-up">
+                        <header class="timeline-header">
                             <div>
-                                <div class="timeline-company">
-                                    ⬡ Inovea Conseil
-                                </div>
-                                <div class="timeline-role">
-                                    Ingénieur DevOps
-                                </div>
+                                <p class="timeline-company">⬡ Inovea Conseil</p>
+                                <h3 class="timeline-role">Ingénieur DevOps</h3>
                             </div>
-                            <span class="timeline-date">2019 → 2022</span>
-                        </div>
-                        <div class="timeline-desc">
-                            Mise en place des premières pratiques DevOps et
-                            CI/CD. Administration Linux, automatisation,
-                            premiers déploiements docker et construction des
-                            pipelines d'intégration continue.
-                        </div>
-                        <div class="project-list">
-                            <div class="project-item">
-                                <span class="project-item-icon">▸</span>
+                            <time class="timeline-date" datetime="2019">2019 → 2022</time>
+                        </header>
+                        <p class="timeline-desc">
+                            Mise en place des premières pratiques DevOps et CI/CD. Administration Linux, automatisation, premiers déploiements Docker et construction des pipelines d'intégration continue.
+                        </p>
+                        <ul class="project-list">
+                            <li class="project-item">
+                                <span class="project-item-icon" aria-hidden="true">▸</span>
                                 <div>
-                                    <div class="project-item-title">
-                                        Mise en place CI/CD
-                                    </div>
-                                    <div class="project-item-desc">
-                                        Construction des premières pipelines
-                                        CI/CD avec Jenkins. Standardisation des
-                                        processus de build, test et déploiement
-                                        sur une dizaine d'applications.
-                                    </div>
-                                    <div class="project-tags">
-                                        <span class="ptag">Jenkins</span>
-                                        <span class="ptag">Docker</span>
-                                        <span class="ptag">Kubernetes</span>
-                                        <span class="ptag">Helm</span>
-                                    </div>
+                                    <h4 class="project-item-title">Mise en place CI/CD</h4>
+                                    <p class="project-item-desc">
+                                        Construction des premières pipelines CI/CD avec Jenkins. Standardisation des processus de build, test et déploiement sur une dizaine d'applications.
+                                    </p>
+                                    <ul class="project-tags" aria-label="Technologies">
+                                        <li class="ptag">Jenkins</li>
+                                        <li class="ptag">Docker</li>
+                                        <li class="ptag">Kubernetes</li>
+                                        <li class="ptag">Helm</li>
+                                    </ul>
                                 </div>
-                            </div>
-
-                            <div class="project-item">
-                                <span class="project-item-icon">▸</span>
+                            </li>
+                            <li class="project-item">
+                                <span class="project-item-icon" aria-hidden="true">▸</span>
                                 <div>
-                                    <div class="project-item-title">
-                                        Automatisation infrastructure — Ansible
-                                        + Terraform
-                                    </div>
-                                    <div class="project-item-desc">
-                                        Remplacement des processus manuels par
-                                        de l'Infrastructure as Code.
-                                        Provisioning Terraform et configuration
-                                        Ansible, réduction du temps de
-                                        déploiement d'une semaine à quelques
-                                        heures.
-                                    </div>
-                                    <div class="project-tags">
-                                        <span class="ptag">Terraform</span>
-                                        <span class="ptag">Ansible</span>
-                                        <span class="ptag">Linux</span>
-                                    </div>
+                                    <h4 class="project-item-title">Automatisation infrastructure — Ansible + Terraform</h4>
+                                    <p class="project-item-desc">
+                                        Remplacement des processus manuels par de l'Infrastructure as Code. Provisioning Terraform et configuration Ansible — réduction du temps de déploiement d'une semaine à quelques heures.
+                                    </p>
+                                    <ul class="project-tags" aria-label="Technologies">
+                                        <li class="ptag">Terraform</li>
+                                        <li class="ptag">Ansible</li>
+                                        <li class="ptag">Linux</li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- EXPERTISE -->
-        <div class="container" id="expertise">
-            <div class="section-title fade-up">
-                <span class="hash">#</span> Expertise
-            </div>
-            <div class="section-desc fade-up">
-                Domaines de compétences approfondies en production
-            </div>
-            <div class="exp-grid">
-                <div class="exp-card fade-up">
-                    <div class="exp-card-header">
-                        <div class="exp-icon">☸️</div>
-                        <div>
-                            <div class="exp-card-title">Kubernetes avancé</div>
-                            <div class="exp-card-cat">Orchestration</div>
-                        </div>
-                    </div>
-                    <div class="exp-card-desc">
-                        Administration de clusters Talos Linux en production,
-                        Cluster API, isolation réseau Cilium, hardening CKS, GPU
-                        workloads.
-                    </div>
-                    <div class="exp-tags">
-                        <span class="exp-tag">Talos Linux</span
-                        ><span class="exp-tag">Cluster API</span
-                        ><span class="exp-tag">Cilium</span
-                        ><span class="exp-tag">Helm</span
-                        ><span class="exp-tag">GPU</span>
-                    </div>
-                </div>
-                <div class="exp-card fade-up">
-                    <div class="exp-card-header">
-                        <div class="exp-icon">⚒️</div>
-                        <div>
-                            <div class="exp-card-title">GitOps &amp; CI/CD</div>
-                            <div class="exp-card-cat">Livraison continue</div>
-                        </div>
-                    </div>
-                    <div class="exp-card-desc">
-                        Pipelines GitOps avec ArgoCD, gestion des secrets via
-                        External Secrets Operator, automatisation des
-                        déploiements multi-environnements.
-                    </div>
-                    <div class="exp-tags">
-                        <span class="exp-tag">ArgoCD</span
-                        ><span class="exp-tag">GitHub Actions</span
-                        ><span class="exp-tag">ESO</span
-                        ><span class="exp-tag">Vault</span>
-                    </div>
-                </div>
-                <div class="exp-card fade-up">
-                    <div class="exp-card-header">
-                        <div class="exp-icon">👁️</div>
-                        <div>
-                            <div class="exp-card-title">Observabilité</div>
-                            <div class="exp-card-cat">
-                                Monitoring · Alerting
+        <section class="section-bg-light" id="expertise" aria-labelledby="expertise-heading">
+            <div class="container">
+                <h2 id="expertise-heading" class="section-title fade-up">
+                    <span class="hash" aria-hidden="true">#</span> Expertise
+                </h2>
+                <p class="section-desc fade-up">Domaines de compétences approfondies en production</p>
+                <div class="exp-grid">
+                    <article class="exp-card fade-up">
+                        <div class="exp-card-header">
+                            <div class="exp-icon" aria-hidden="true">☸</div>
+                            <div>
+                                <h3 class="exp-card-title">Kubernetes avancé</h3>
+                                <p class="exp-card-cat">Orchestration</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="exp-card-desc">
-                        Stack kube-prometheus complète, Grafana, Loki, Tempo,
-                        SLO/SLI, Percona PMM pour PostgreSQL/MySQL.
-                    </div>
-                    <div class="exp-tags">
-                        <span class="exp-tag">Prometheus</span
-                        ><span class="exp-tag">Grafana</span
-                        ><span class="exp-tag">Loki</span
-                        ><span class="exp-tag">Tempo</span>
-                    </div>
-                </div>
-                <div class="exp-card fade-up">
-                    <div class="exp-card-header">
-                        <div class="exp-icon">📑</div>
-                        <div>
-                            <div class="exp-card-title">
-                                Infrastructure as Code
+                        <p class="exp-card-desc">
+                            Administration de clusters Talos Linux en production, Cluster API, isolation réseau Cilium, hardening CKS, GPU workloads.
+                        </p>
+                        <ul class="exp-tags" aria-label="Technologies">
+                            <li class="exp-tag">Talos Linux</li>
+                            <li class="exp-tag">Cluster API</li>
+                            <li class="exp-tag">Cilium</li>
+                            <li class="exp-tag">Helm</li>
+                            <li class="exp-tag">GPU</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card fade-up">
+                        <div class="exp-card-header">
+                            <div class="exp-icon" aria-hidden="true">⚙</div>
+                            <div>
+                                <h3 class="exp-card-title">GitOps &amp; CI/CD</h3>
+                                <p class="exp-card-cat">Livraison continue</p>
                             </div>
-                            <div class="exp-card-cat">Terraform · Ansible</div>
                         </div>
-                    </div>
-                    <div class="exp-card-desc">
-                        Provisioning déclaratif GCP et Proxmox on-premise via
-                        Terraform. Migrations cloud complexes et gestion d'état
-                        à grande échelle.
-                    </div>
-                    <div class="exp-tags">
-                        <span class="exp-tag">Terraform</span
-                        ><span class="exp-tag">Proxmox</span
-                        ><span class="exp-tag">GCP</span
-                        ><span class="exp-tag">Ansible</span>
-                    </div>
-                </div>
-                <div class="exp-card fade-up">
-                    <div class="exp-card-header">
-                        <div class="exp-icon">🔒</div>
-                        <div>
-                            <div class="exp-card-title">Sécurité K8s</div>
-                            <div class="exp-card-cat">DevSecOps</div>
+                        <p class="exp-card-desc">
+                            Pipelines GitOps avec ArgoCD, gestion des secrets via External Secrets Operator, automatisation des déploiements multi-environnements.
+                        </p>
+                        <ul class="exp-tags" aria-label="Technologies">
+                            <li class="exp-tag">ArgoCD</li>
+                            <li class="exp-tag">GitHub Actions</li>
+                            <li class="exp-tag">ESO</li>
+                            <li class="exp-tag">Vault</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card fade-up">
+                        <div class="exp-card-header">
+                            <div class="exp-icon" aria-hidden="true">◎</div>
+                            <div>
+                                <h3 class="exp-card-title">Observabilité</h3>
+                                <p class="exp-card-cat">Monitoring · Alerting</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="exp-card-desc">
-                        Hardening Kubernetes niveau CKS : AppArmor, Falco, RBAC
-                        granulaire, admission controllers, scanning Trivy,
-                        politiques réseau.
-                    </div>
-                    <div class="exp-tags">
-                        <span class="exp-tag">Falco</span
-                        ><span class="exp-tag">OPA</span
-                        ><span class="exp-tag">Trivy</span
-                        ><span class="exp-tag">RBAC</span>
-                    </div>
-                </div>
-                <div class="exp-card fade-up">
-                    <div class="exp-card-header">
-                        <div class="exp-icon">🧑‍💻</div>
-                        <div>
-                            <div class="exp-card-title">Développement</div>
-                            <div class="exp-card-cat">Open Source</div>
+                        <p class="exp-card-desc">
+                            Stack kube-prometheus complète, Grafana, Loki, Tempo, SLO/SLI, Percona PMM pour PostgreSQL/MySQL.
+                        </p>
+                        <ul class="exp-tags" aria-label="Technologies">
+                            <li class="exp-tag">Prometheus</li>
+                            <li class="exp-tag">Grafana</li>
+                            <li class="exp-tag">Loki</li>
+                            <li class="exp-tag">Tempo</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card fade-up">
+                        <div class="exp-card-header">
+                            <div class="exp-icon" aria-hidden="true">◈</div>
+                            <div>
+                                <h3 class="exp-card-title">Infrastructure as Code</h3>
+                                <p class="exp-card-cat">Terraform · Ansible</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="exp-card-desc">
-                        Avant d'avoir mon appétence pour le milieu de
-                        l'architeture system, j'étais développeur backend au
-                        début Java / PHP, puis j'ai réalisé d'autre projet en GO
-                        / Python / Ruby
-                    </div>
-                    <div class="exp-tags">
-                        <span class="exp-tag">Go</span
-                        ><span class="exp-tag">Python</span
-                        ><span class="exp-tag">PHP</span
-                        ><span class="exp-tag">CNCF</span>
-                    </div>
+                        <p class="exp-card-desc">
+                            Provisioning déclaratif GCP et Proxmox on-premise via Terraform. Migrations cloud complexes et gestion d'état à grande échelle.
+                        </p>
+                        <ul class="exp-tags" aria-label="Technologies">
+                            <li class="exp-tag">Terraform</li>
+                            <li class="exp-tag">Proxmox</li>
+                            <li class="exp-tag">GCP</li>
+                            <li class="exp-tag">Ansible</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card fade-up">
+                        <div class="exp-card-header">
+                            <div class="exp-icon" aria-hidden="true">⬡</div>
+                            <div>
+                                <h3 class="exp-card-title">Sécurité Kubernetes</h3>
+                                <p class="exp-card-cat">DevSecOps</p>
+                            </div>
+                        </div>
+                        <p class="exp-card-desc">
+                            Hardening Kubernetes niveau CKS : AppArmor, Falco, RBAC granulaire, admission controllers, scanning Trivy, politiques réseau.
+                        </p>
+                        <ul class="exp-tags" aria-label="Technologies">
+                            <li class="exp-tag">Falco</li>
+                            <li class="exp-tag">OPA</li>
+                            <li class="exp-tag">Trivy</li>
+                            <li class="exp-tag">RBAC</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card fade-up">
+                        <div class="exp-card-header">
+                            <div class="exp-icon" aria-hidden="true">&lt;/&gt;</div>
+                            <div>
+                                <h3 class="exp-card-title">Développement</h3>
+                                <p class="exp-card-cat">Open Source</p>
+                            </div>
+                        </div>
+                        <p class="exp-card-desc">
+                            Background développeur backend (Java, PHP) avant de basculer vers l'infrastructure. Projets Open Source en Go, Python et Ruby.
+                        </p>
+                        <ul class="exp-tags" aria-label="Technologies">
+                            <li class="exp-tag">Go</li>
+                            <li class="exp-tag">Python</li>
+                            <li class="exp-tag">Ruby</li>
+                            <li class="exp-tag">CNCF</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- HOMELAB -->
-        <div style="background: var(--bg2)">
-            <div class="container" id="homelab">
-                <div class="section-title fade-up">
-                    <span class="hash">#</span> Homelab
-                </div>
-                <div class="section-desc fade-up">
-                    wheezy.fr — cluster Kubernetes talos self-hosted sur
-                    Proxmox, géré en GitOps
-                </div>
+        <section class="section-bg-dark" id="homelab" aria-labelledby="homelab-heading">
+            <div class="container">
+                <h2 id="homelab-heading" class="section-title fade-up">
+                    <span class="hash" aria-hidden="true">#</span> Homelab
+                </h2>
+                <p class="section-desc fade-up">wheezy.fr — cluster Kubernetes Talos self-hosted sur Proxmox, géré en GitOps</p>
                 <div class="homelab-layout">
-                    <div class="code-block fade-up">
-                        <div class="code-header">
+                    <div class="code-block fade-up" role="img" aria-label="Sortie kubectl get nodes : 5 nodes actifs sous Talos Linux v1.35.2">
+                        <div class="code-header" aria-hidden="true">
                             <div class="dot dot-red"></div>
                             <div class="dot dot-yellow"></div>
                             <div class="dot dot-green"></div>
-                            <span class="code-filename"
-                                >kubectl get nodes -o wide</span
-                            >
+                            <span class="code-filename">kubectl get nodes -o wide</span>
                         </div>
-                        <div class="code-body">
-                            <span class="c-comment"
-                                ># Cluster Talos Linux / Proxmox</span
-                            ><br /><br />
-                            <span class="c-key">NAME</span>
-                            <span class="c-val">STATUS</span>
-                            <span class="c-type">ROLES</span>
+                        <div class="code-body" aria-hidden="true">
+                            <span class="c-comment"># Cluster Talos Linux / Proxmox</span><br /><br />
+                            <span class="c-key">NAME</span>&nbsp;&nbsp;&nbsp;
+                            <span class="c-val">STATUS</span>&nbsp;&nbsp;
+                            <span class="c-type">ROLES</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <span class="c-op">VERSION</span><br />
-                            <span class="c-str">c0</span>
-                            <span class="c-val">Ready</span>
-                            <span class="c-type">control-plane</span>
-                            <span class="c-op">v1.35.0</span><br />
-                            <span class="c-str">w1</span>
-                            <span class="c-val">Ready</span>
-                            <span class="c-type">worker</span>
-                            <span class="c-op">v1.35.0</span><br />
-                            <span class="c-str">w2</span>
-                            <span class="c-val">Ready</span>
-                            <span class="c-type">worker</span>
-                            <span class="c-op">v1.35.0</span><br />
-                            <span class="c-str">w3</span>
-                            <span class="c-val">Ready</span>
-                            <span class="c-type">worker</span>
-                            <span class="c-op">v1.35.0</span><br />
-                            <span class="c-str">w4</span>
-                            <span class="c-val">Ready</span>
-                            <span class="c-type">worker,gpu</span>
-                            <span class="c-op">v1.35.0</span><br /><br />
+                            <span class="c-str">c0</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-val">Ready</span>&nbsp;&nbsp;&nbsp;<span class="c-type">control-plane</span>&nbsp;<span class="c-op">v1.35.2</span><br />
+                            <span class="c-str">w1</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-val">Ready</span>&nbsp;&nbsp;&nbsp;<span class="c-type">worker</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-op">v1.35.2</span><br />
+                            <span class="c-str">w2</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-val">Ready</span>&nbsp;&nbsp;&nbsp;<span class="c-type">worker</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-op">v1.35.2</span><br />
+                            <span class="c-str">w3</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-val">Ready</span>&nbsp;&nbsp;&nbsp;<span class="c-type">worker</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-op">v1.35.2</span><br />
+                            <span class="c-str">w4</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-val">Ready</span>&nbsp;&nbsp;&nbsp;<span class="c-type">worker,gpu</span>&nbsp;&nbsp;&nbsp;<span class="c-op">v1.35.2</span><br /><br />
+                            <span class="c-comment"># 5 nodes · Talos Linux · GitOps ArgoCD</span>
                         </div>
                     </div>
                     <div class="homelab-desc fade-up">
                         <p>
-                            Un cluster
-                            <strong>Kubernetes production-grade</strong>
-                            self-hosted sous le domaine
-                            <strong>wheezy.fr</strong>, opéré 24/7 sur Proxmox.
-                            Chaque service tourne sur ce cluster — c'est mon
-                            terrain d'expérimentation en conditions réelles.
+                            Un cluster <strong>Kubernetes production-grade</strong> self-hosted sous le domaine <strong>wheezy.fr</strong>, opéré 24/7 sur Proxmox. Chaque service tourne sur ce cluster — c'est mon terrain d'expérimentation en conditions réelles.
                         </p>
                         <p>
-                            Provisioning via <strong>Terraform</strong>,
-                            déploiements GitOps avec <strong>ArgoCD</strong>,
-                            stockage distribué <strong>LINSTOR/Piraeus</strong>,
-                            sauvegardes CSI avec <strong>Velero</strong>, SSO
-                            centralisé <strong>Authentik</strong>.
+                            Provisioning via <strong>Terraform</strong>, déploiements GitOps avec <strong>ArgoCD</strong>, stockage distribué <strong>LINSTOR/Piraeus</strong>, sauvegardes CSI avec <strong>Velero</strong>, SSO centralisé <strong>Authentik</strong>.
                         </p>
                         <div class="stat-row">
                             <div class="stat-box">
@@ -604,205 +578,92 @@
                                 <div class="stat-box-num">50+</div>
                                 <div class="stat-box-label">apps déployées</div>
                             </div>
+                            <div class="stat-box">
+                                <div class="stat-box-num">24/7</div>
+                                <div class="stat-box-label">uptime</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- PROJETS GITHUB (fetch live) -->
-        <div style="background: var(--bg2)">
-            <div class="container" id="projets">
-                <div class="section-title fade-up">
-                    <span class="hash">#</span> Projets GitHub
-                </div>
-                <div class="section-desc fade-up">Repositories publics</div>
-                <div id="github-grid">
-                    <div class="gh-loading">
-                        <span class="spinner"></span> Chargement des repos...
+        </section>
+
+        <!-- PROJETS GITHUB -->
+        <section class="section-bg-light" id="projets" aria-labelledby="projets-heading">
+            <div class="container">
+                <h2 id="projets-heading" class="section-title fade-up">
+                    <span class="hash" aria-hidden="true">#</span> Projets GitHub
+                </h2>
+                <p class="section-desc fade-up">Repositories publics — triés par activité</p>
+                <div id="github-grid" role="list">
+                    <div class="gh-loading" role="status" aria-live="polite">
+                        <span class="spinner" aria-hidden="true"></span> Chargement des repos...
                     </div>
                 </div>
             </div>
-        </div>
-        <h2 style="display: none">Consultant Kubernetes freelance</h2>
-        <h2 style="display: none">Audit et formation Kubernetes</h2>
-        <!-- SERVICES / WHOAMI SEO -->
-        <div class="container" id="services">
-            <div class="section-title fade-up">
-                <span class="hash">#</span> Services Kubernetes & DevOps
-            </div>
+        </section>
 
-            <div class="terminal-window fade-up">
-                <div class="terminal-bar">
-                    <div class="dot dot-red"></div>
-                    <div class="dot dot-yellow"></div>
-                    <div class="dot dot-green"></div>
-                    <span class="terminal-title"
-                        >florian-spk — services.yaml</span
-                    >
-                </div>
-
-                <div class="terminal-body">
-                    <div class="t-line">
-                        <span class="t-prompt">❯</span>
-                        <span class="t-cmd">cat services.yaml</span>
+<!-- SERVICES -->
+        <section class="section-bg-light" id="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading" class="section-title fade-up">
+                    <span class="hash" aria-hidden="true">#</span> Services Kubernetes &amp; DevOps
+                </h2>
+                <div class="terminal-window fade-up" role="img" aria-label="Services proposés : audit Kubernetes, migration, formation et accompagnement SRE/DevOps">
+                    <div class="terminal-bar" aria-hidden="true">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                        <span class="terminal-title">florian-spick — services.yaml</span>
                     </div>
-
-                    <div class="t-blank"></div>
-
-                    <!-- H2 SEO -->
-                    <div class="t-line">
-                        <span class="t-out">
-                            <span style="color: var(--cyan)">title:</span>
-                            <span style="color: var(--green)">
-                                Consultant Kubernetes freelance
-                            </span>
-                        </span>
-                    </div>
-
-                    <div class="t-line">
-                        <span class="t-out">
-                            <span style="color: var(--cyan)">location:</span>
-                            <span style="color: var(--yellow)">
-                                France · Remote Europe
-                            </span>
-                        </span>
-                    </div>
-
-                    <div class="t-line">
-                        <span class="t-out">
-                            <span style="color: var(--cyan)"
-                                >availability:</span
-                            >
-                            <span style="color: var(--purple)">
-                                Soirs · Week-ends · Missions ponctuelles
-                            </span>
-                        </span>
-                    </div>
-
-                    <div class="t-blank"></div>
-
-                    <!-- SERVICES -->
-                    <div class="t-line">
-                        <span class="t-out">
-                            <span style="color: var(--cyan)">services:</span>
-                        </span>
-                    </div>
-
-                    <div class="t-line">
-                        <span class="t-out">
-                            &nbsp;&nbsp;-
-                            <span style="color: var(--green)"
-                                >Audit Kubernetes</span
-                            >
-                            <span style="color: var(--text-muted)">
-                                # sécurité, performance, coûts, best practices
-                                (CKS)
-                            </span>
-                        </span>
-                    </div>
-
-                    <div class="t-line">
-                        <span class="t-out">
-                            &nbsp;&nbsp;-
-                            <span style="color: var(--green)"
-                                >Migration vers Kubernetes</span
-                            >
-                            <span style="color: var(--text-muted)">
-                                # VM → containers, GitOps, modernisation infra
-                            </span>
-                        </span>
-                    </div>
-
-                    <div class="t-line">
-                        <span class="t-out">
-                            &nbsp;&nbsp;-
-                            <span style="color: var(--green)"
-                                >Formation Kubernetes</span
-                            >
-                            <span style="color: var(--text-muted)">
-                                # équipes DevOps / dev, production, sécurité
-                            </span>
-                        </span>
-                    </div>
-
-                    <div class="t-line">
-                        <span class="t-out">
-                            &nbsp;&nbsp;-
-                            <span style="color: var(--green)"
-                                >Accompagnement SRE / DevOps</span
-                            >
-                            <span style="color: var(--text-muted)">
-                                # CI/CD, observabilité, SLO/SLI, infra as code
-                            </span>
-                        </span>
-                    </div>
-
-                    <div class="t-blank"></div>
-
-                    <!-- H2 SEO secondaires -->
-                    <div class="t-line">
-                        <span class="t-out">
-                            <span style="color: var(--cyan)">expertise:</span>
-                            <span style="color: var(--purple)">
-                                Audit et optimisation Kubernetes · Formation
-                                Kubernetes entreprise
-                            </span>
-                        </span>
-                    </div>
-
-                    <div class="t-blank"></div>
-
-                    <div class="t-line">
-                        <span class="t-prompt">❯</span>
-                        <span class="t-cmd" style="opacity: 0.4">▌</span>
+                    <div class="terminal-body" aria-hidden="true">
+                        <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">cat services.yaml</span></div>
+                        <div class="t-blank"></div>
+                        <div class="t-line"><span class="t-out"><span style="color:var(--cyan)">title:</span><span style="color:var(--green)"> Ingénieur DevOps / SRE — CDI ou freelance</span></span></div>
+                        <div class="t-line"><span class="t-out"><span style="color:var(--cyan)">location:</span><span style="color:var(--yellow)"> France · Remote Europe</span></span></div>
+                        <div class="t-line"><span class="t-out"><span style="color:var(--cyan)">availability:</span><span style="color:var(--purple)"> Immédiate · CDI · Missions freelance</span></span></div>
+                        <div class="t-blank"></div>
+                        <div class="t-line"><span class="t-out"><span style="color:var(--cyan)">services:</span></span></div>
+                        <div class="t-line"><span class="t-out">&nbsp;&nbsp;- <span style="color:var(--green)">Audit Kubernetes</span><span style="color:var(--text-muted)"> # sécurité, performance, coûts, best practices (CKS)</span></span></div>
+                        <div class="t-line"><span class="t-out">&nbsp;&nbsp;- <span style="color:var(--green)">Migration vers Kubernetes</span><span style="color:var(--text-muted)"> # VM → containers, GitOps, modernisation infra</span></span></div>
+                        <div class="t-line"><span class="t-out">&nbsp;&nbsp;- <span style="color:var(--green)">Formation Kubernetes</span><span style="color:var(--text-muted)"> # équipes DevOps / dev, production, sécurité</span></span></div>
+                        <div class="t-line"><span class="t-out">&nbsp;&nbsp;- <span style="color:var(--green)">Accompagnement SRE / DevOps</span><span style="color:var(--text-muted)"> # CI/CD, observabilité, SLO/SLI, infra as code</span></span></div>
+                        <div class="t-blank"></div>
+                        <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd" style="opacity:.4">▌</span></div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- CONTACT -->
-        <div style="background: var(--bg2)">
-            <div class="container" id="contact">
+        <section class="section-bg-dark" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
                 <div class="contact-card fade-up">
-                    <div class="contact-title">
-                        Ouvrons une <span>connexion</span>
-                    </div>
-                    <div class="contact-sub">
-                        Disponible en freelance soirs et weekend<br />
-                    </div>
+                    <h2 id="contact-heading" class="contact-title">Ouvrons une <span>connexion</span></h2>
+                    <p class="contact-sub">
+                        Ouvert aux opportunités CDI et missions freelance.<br />
+                        Remote Europe · Grand Est, France
+                    </p>
                     <div class="contact-links">
-                        <a
-                            href="mailto:florian@florianspk.fr"
-                            class="btn btn-green"
-                            >📬 florian@florianspk.fr</a
-                        >
-                        <a
-                            href="https://linkedin.com/in/florian-spick"
-                            target="_blank"
-                            class="btn btn-outline"
-                            >LinkedIn</a
-                        >
-                        <a
-                            href="https://github.com/florianspk"
-                            target="_blank"
-                            class="btn btn-outline"
-                            >GitHub</a
-                        >
+                        <a href="mailto:florian@florianspk.fr" class="btn btn-green">✉ florian@florianspk.fr</a>
+                        <a href="https://linkedin.com/in/florian-spick" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn ↗</a>
+                        <a href="https://github.com/florianspk" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub ↗</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <footer>
-            <span>florian-spk · SRE · DevOps · Kubernetes</span>
-            <span
-                ><a href="https://florianspk.fr" target="_blank"
-                    >florianspk.fr</a
-                >
-                · self-hosted on Talos/Proxmox</span
-            >
+        </main>
+
+        <!-- FOOTER -->
+        <footer role="contentinfo">
+            <span>Florian Spick · SRE · DevOps · Kubernetes</span>
+            <span>
+                <a href="https://florianspk.fr/" title="Portfolio Florian Spick">florianspk.fr</a>
+                · self-hosted on Talos/Proxmox
+            </span>
         </footer>
 
-        <script src="assets/js/script.js"></script>
+        <script src="assets/js/script.js" defer></script>
     </body>
 </html>

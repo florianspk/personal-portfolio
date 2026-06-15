@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2744"/>
+      <stop offset="100%" style="stop-color:#0f1a2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8724a"/>
+      <stop offset="100%" style="stop-color:#c45a35"/>
+    </linearGradient>
+  </defs>
+  <!-- Hexagon background -->
+  <polygon points="100,8 182,53 182,147 100,192 18,147 18,53" fill="url(#bg)" stroke="#e8724a" stroke-width="2.5"/>
+  <!-- Inner hexagon border -->
+  <polygon points="100,20 170,60 170,140 100,180 30,140 30,60" fill="none" stroke="rgba(232,114,74,0.3)" stroke-width="1"/>
+  <!-- Argo octopus simplified icon -->
+  <circle cx="100" cy="85" r="22" fill="url(#accent)" opacity="0.9"/>
+  <circle cx="100" cy="85" r="14" fill="#1a2744"/>
+  <circle cx="100" cy="85" r="7" fill="#e8724a"/>
+  <!-- Tentacle-like lines -->
+  <line x1="78" y1="85" x2="65" y2="78" stroke="#e8724a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="78" y1="85" x2="65" y2="92" stroke="#e8724a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="122" y1="85" x2="135" y2="78" stroke="#e8724a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="122" y1="85" x2="135" y2="92" stroke="#e8724a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="100" y1="63" x2="100" y2="50" stroke="#e8724a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Text -->
+  <text x="100" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff" letter-spacing="2">CAPA</text>
+  <text x="100" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" fill="rgba(255,255,255,0.65)" letter-spacing="0.5">CERTIFIED ARGO</text>
+  <text x="100" y="153" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" fill="rgba(255,255,255,0.65)" letter-spacing="0.5">PROJECT ASSOCIATE</text>
+  <text x="100" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" fill="rgba(232,114,74,0.8)" letter-spacing="0.5">LINUX FOUNDATION</text>
+</svg>
