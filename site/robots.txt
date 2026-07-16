@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /assets/CV-Florian-Spick-2026-FR.pdf
-Disallow: /assets/CV-Florian-Spick-2026-EN.pdf
+Disallow: /assets/Florian_Spick_SRE_Kubernetes-FR.pdf
+Disallow: /assets/Florian_Spick_SRE_Kubernetes-EN.pdf
 
 Sitemap: https://florianspk.fr/sitemap.xml

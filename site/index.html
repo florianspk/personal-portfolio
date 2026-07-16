@@ -43,7 +43,7 @@
                     "name": "Florian Spick",
                     "givenName": "Florian",
                     "familyName": "Spick",
-                    "jobTitle": "Ingénieur DevOps / SRE",
+                    "jobTitle": "Site Reliability Engineer / Platform Engineer",
                     "description": "Ingénieur DevOps et SRE avec 6 ans d'expérience sur des infrastructures Kubernetes en production. Expert certifié CKA et CKS, spécialisé en migration cloud-native, observabilité et sécurité.",
                     "url": "https://florianspk.fr/",
                     "email": "florian@florianspk.fr",
@@ -92,7 +92,7 @@
                     "worksFor": {
                         "@type": "Organization",
                         "name": "Equasens",
-                        "address": { "@type": "PostalAddress", "addressRegion": "Grand Est", "addressCountry": "FR" }
+                        "address": { "@type": "PostalAddress", "addressLocality": "Nancy", "addressRegion": "Grand Est", "addressCountry": "FR" }
                     },
                     "alumniOf": {
                         "@type": "Organization",
@@ -181,12 +181,12 @@
                 <div class="hero-content">
                     <h1 id="hero-heading" class="hero-title">
                         Florian Spick<br />
-                        <span class="role">DevOps · SRE · Kubernetes Engineer</span><span class="cursor" aria-hidden="true"></span>
+                        <span class="role">SRE · Platform Engineer · Kubernetes Expert</span><span class="cursor" aria-hidden="true"></span>
                     </h1>
 
                     <p class="hero-sub">
-                        6 ans d'expérience sur des infrastructures Kubernetes en production.<br />
-                        Migration legacy → cloud-native, observabilité, sécurité, GitOps.<br />
+                        Platform Engineer / SRE spécialisé Kubernetes &amp; Cloud Native.<br />
+                        Migration cloud, GitOps et sécurisation de clusters — du design à la production.<br />
                         <span class="hl">Certifié CKA &amp; CKS</span> — expert reconnu dans l'écosystème CNCF.
                     </p>
 
@@ -204,7 +204,7 @@
 
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-green">→ Me contacter</a>
-                        <a href="assets/CV-Florian-Spick-2026-FR.pdf" download class="btn btn-cv-hero">↓ CV PDF</a>
+                        <a href="assets/Florian_Spick_SRE_Kubernetes-FR.pdf" download class="btn btn-cv-hero">↓ CV PDF</a>
                         <a href="https://github.com/florianspk" target="_blank" rel="noopener noreferrer" class="btn btn-outline">⎇ GitHub</a>
                         <a href="https://blog.wheezy.fr" target="_blank" rel="noopener noreferrer" class="btn btn-outline">✍ Blog</a>
                     </div>
@@ -227,13 +227,13 @@
                 </div>
                 <div class="stat-div" aria-hidden="true"></div>
                 <div class="stat-item" role="listitem">
-                    <div class="stat-num">1000+</div>
-                    <div class="stat-label">VMs migrées</div>
+                    <div class="stat-num">500+</div>
+                    <div class="stat-label">VMs en production</div>
                 </div>
                 <div class="stat-div" aria-hidden="true"></div>
                 <div class="stat-item" role="listitem">
-                    <div class="stat-num">50+</div>
-                    <div class="stat-label">apps en production</div>
+                    <div class="stat-num">8</div>
+                    <div class="stat-label">clusters Kubernetes</div>
                 </div>
             </div>
         </section>
@@ -287,28 +287,29 @@
                     <article class="timeline-item fade-up">
                         <header class="timeline-header">
                             <div>
-                                <p class="timeline-company">⬡ Equasens · Grand Est</p>
-                                <h3 class="timeline-role">Ingénieur DevOps / SRE</h3>
+                                <p class="timeline-company">⬡ Equasens · Nancy, France</p>
+                                <h3 class="timeline-role">Ingénieur SRE</h3>
                             </div>
-                            <time class="timeline-date" datetime="2022">2022 → présent</time>
+                            <time class="timeline-date" datetime="2023">2023 → présent</time>
                         </header>
                         <p class="timeline-desc">
-                            Responsable de l'infrastructure Kubernetes en production : migration legacy, observabilité, sécurité et déploiement de workloads IA/GPU. Autonomie complète sur les choix d'architecture et de tooling.
+                            Administration et exploitation d'un environnement de production à grande échelle (500+ VM, 8 clusters Kubernetes sur deux Data Centers) : migration cloud-native, GitOps, observabilité, sécurité et déploiement de workloads IA/GPU. Autonomie complète sur les choix d'architecture et de tooling.
                         </p>
                         <ul class="project-list">
                             <li class="project-item">
                                 <span class="project-item-icon" aria-hidden="true">▸</span>
                                 <div>
-                                    <h4 class="project-item-title">Inférence GPU sur Kubernetes</h4>
+                                    <h4 class="project-item-title">Inférence GPU / LLM sur Kubernetes</h4>
                                     <p class="project-item-desc">
-                                        Déploiement de workloads d'inférence ML sur GPU NVIDIA en production. Configuration du device plugin Kubernetes, isolation des ressources GPU par namespace, scheduling prioritaire et monitoring des métriques DCGM via Prometheus.
+                                        Déploiement de workloads d'inférence LLM à forte contrainte de performance sur GPU NVIDIA H200 en production. Partitionnement MIG dynamique, service vLLM avec KV cache offload, isolation des ressources GPU par namespace et monitoring des métriques DCGM via Prometheus.
                                     </p>
                                     <ul class="project-tags" aria-label="Technologies">
+                                        <li class="ptag">NVIDIA H200</li>
                                         <li class="ptag">NVIDIA GPU Operator</li>
+                                        <li class="ptag">MIG dynamique</li>
+                                        <li class="ptag">vLLM</li>
                                         <li class="ptag">DCGM Exporter</li>
                                         <li class="ptag">Prometheus</li>
-                                        <li class="ptag">Resource Quotas</li>
-                                        <li class="ptag">Taints/Tolerations</li>
                                     </ul>
                                 </div>
                             </li>
@@ -333,7 +334,7 @@
                                 <div>
                                     <h4 class="project-item-title">Migration infrastructure legacy → Kubernetes</h4>
                                     <p class="project-item-desc">
-                                        Migration complète d'une infrastructure VM legacy (bare-metal OVH / 1000 VMs sous VMware) vers un cluster Kubernetes. Conteneurisation des applications, définition des manifests Helm, mise en place du GitOps ArgoCD et gestion des données stateful avec opérateurs dédiés.
+                                        Migration d'applications et de bases de données depuis une infrastructure VM legacy (500+ VM sous VMware, deux Data Centers) vers des architectures conteneurisées et cloud-native. Conteneurisation, manifests Helm, pipelines GitOps ArgoCD et CI/CD (amélioration des DORA metrics), gestion du stateful via opérateurs dédiés.
                                     </p>
                                     <ul class="project-tags" aria-label="Technologies">
                                         <li class="ptag">Kubernetes</li>
@@ -361,6 +362,22 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li class="project-item">
+                                <span class="project-item-icon" aria-hidden="true">▸</span>
+                                <div>
+                                    <h4 class="project-item-title">Référent middleware cloud-native &amp; Data</h4>
+                                    <p class="project-item-desc">
+                                        Référent technique des équipes applicatives sur les architectures middleware cloud-native : Data Lakehouse et pipelines de Change Data Capture (CDC) avec Kafka / Debezium. Conception d'une chaîne IaC Terraform/Ansible pour le déploiement automatisé de clusters Kubernetes et de bases de données en Haute Disponibilité.
+                                    </p>
+                                    <ul class="project-tags" aria-label="Technologies">
+                                        <li class="ptag">Kafka</li>
+                                        <li class="ptag">Debezium</li>
+                                        <li class="ptag">Data Lakehouse</li>
+                                        <li class="ptag">Terraform</li>
+                                        <li class="ptag">Ansible</li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </article>
 
@@ -368,13 +385,13 @@
                     <article class="timeline-item fade-up">
                         <header class="timeline-header">
                             <div>
-                                <p class="timeline-company">⬡ Inovea Conseil</p>
+                                <p class="timeline-company">⬡ Inovea Conseil · Nancy, France</p>
                                 <h3 class="timeline-role">Ingénieur DevOps</h3>
                             </div>
-                            <time class="timeline-date" datetime="2019">2019 → 2022</time>
+                            <time class="timeline-date" datetime="2020">2020 → 2023</time>
                         </header>
                         <p class="timeline-desc">
-                            Mise en place des premières pratiques DevOps et CI/CD. Administration Linux, automatisation, premiers déploiements Docker et construction des pipelines d'intégration continue.
+                            Développement et intégration d'une chaîne CI/CD renforçant la qualité du code et la sécurité du SI. Environnements de développement conteneurisés (Docker &amp; Docker Compose dynamique), évolution de l'ERP Dolibarr et déploiement de bonnes pratiques DevSecOps.
                         </p>
                         <ul class="project-list">
                             <li class="project-item">
@@ -382,26 +399,27 @@
                                 <div>
                                     <h4 class="project-item-title">Mise en place CI/CD</h4>
                                     <p class="project-item-desc">
-                                        Construction des premières pipelines CI/CD avec Jenkins. Standardisation des processus de build, test et déploiement sur une dizaine d'applications.
+                                        Construction des premières pipelines CI/CD et standardisation des processus de build, test et déploiement, renforçant la qualité du code et la sécurité du SI.
                                     </p>
                                     <ul class="project-tags" aria-label="Technologies">
                                         <li class="ptag">Jenkins</li>
                                         <li class="ptag">Docker</li>
-                                        <li class="ptag">Kubernetes</li>
-                                        <li class="ptag">Helm</li>
+                                        <li class="ptag">Snyk</li>
+                                        <li class="ptag">DevSecOps</li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="project-item">
                                 <span class="project-item-icon" aria-hidden="true">▸</span>
                                 <div>
-                                    <h4 class="project-item-title">Automatisation infrastructure — Ansible + Terraform</h4>
+                                    <h4 class="project-item-title">Environnements conteneurisés &amp; ERP Dolibarr</h4>
                                     <p class="project-item-desc">
-                                        Remplacement des processus manuels par de l'Infrastructure as Code. Provisioning Terraform et configuration Ansible — réduction du temps de déploiement d'une semaine à quelques heures.
+                                        Mise en place d'environnements de développement conteneurisés (Docker &amp; Docker Compose dynamique) améliorant la reproductibilité et l'onboarding. Analyse des besoins clients et évolution de l'ERP Dolibarr avec ajout de fonctionnalités métier.
                                     </p>
                                     <ul class="project-tags" aria-label="Technologies">
-                                        <li class="ptag">Terraform</li>
-                                        <li class="ptag">Ansible</li>
+                                        <li class="ptag">Docker Compose</li>
+                                        <li class="ptag">Dolibarr</li>
+                                        <li class="ptag">PHP</li>
                                         <li class="ptag">Linux</li>
                                     </ul>
                                 </div>
@@ -433,10 +451,10 @@
                         </p>
                         <ul class="exp-tags" aria-label="Technologies">
                             <li class="exp-tag">Talos Linux</li>
-                            <li class="exp-tag">Cluster API</li>
+                            <li class="exp-tag">VMware Tanzu</li>
                             <li class="exp-tag">Cilium</li>
                             <li class="exp-tag">Helm</li>
-                            <li class="exp-tag">GPU</li>
+                            <li class="exp-tag">ArgoCD</li>
                         </ul>
                     </article>
                     <article class="exp-card fade-up">
@@ -520,13 +538,50 @@
                             </div>
                         </div>
                         <p class="exp-card-desc">
-                            Background développeur backend (Java, PHP) avant de basculer vers l'infrastructure. Projets Open Source en Go, Python et Ruby.
+                            Background développeur backend (PHP) avant de basculer vers l'infrastructure. Outils et projets Open Source en Go et Python, publiés sur GitHub.
                         </p>
                         <ul class="exp-tags" aria-label="Technologies">
                             <li class="exp-tag">Go</li>
                             <li class="exp-tag">Python</li>
-                            <li class="exp-tag">Ruby</li>
-                            <li class="exp-tag">CNCF</li>
+                            <li class="exp-tag">PHP</li>
+                            <li class="exp-tag">Docker</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card fade-up">
+                        <div class="exp-card-header">
+                            <div class="exp-icon" aria-hidden="true">◲</div>
+                            <div>
+                                <h3 class="exp-card-title">GPU / ML Infra</h3>
+                                <p class="exp-card-cat">Inférence LLM</p>
+                            </div>
+                        </div>
+                        <p class="exp-card-desc">
+                            Déploiement de workloads à forte contrainte de performance : GPU NVIDIA H200, partitionnement MIG dynamique, service vLLM avec KV cache offload.
+                        </p>
+                        <ul class="exp-tags" aria-label="Technologies">
+                            <li class="exp-tag">NVIDIA GPU Operator</li>
+                            <li class="exp-tag">MIG</li>
+                            <li class="exp-tag">vLLM</li>
+                            <li class="exp-tag">Kubeflow</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card fade-up">
+                        <div class="exp-card-header">
+                            <div class="exp-icon" aria-hidden="true">⛁</div>
+                            <div>
+                                <h3 class="exp-card-title">Data &amp; Messaging</h3>
+                                <p class="exp-card-cat">Stateful · Streaming</p>
+                            </div>
+                        </div>
+                        <p class="exp-card-desc">
+                            Administration de bases de données et pipelines de streaming : Data Lakehouse et Change Data Capture (CDC) avec Kafka / Debezium, brokers et caches distribués.
+                        </p>
+                        <ul class="exp-tags" aria-label="Technologies">
+                            <li class="exp-tag">PostgreSQL</li>
+                            <li class="exp-tag">MySQL</li>
+                            <li class="exp-tag">Kafka</li>
+                            <li class="exp-tag">Redis</li>
+                            <li class="exp-tag">RabbitMQ</li>
                         </ul>
                     </article>
                 </div>
@@ -567,7 +622,7 @@
                             Un cluster <strong>Kubernetes production-grade</strong> self-hosted sous le domaine <strong>wheezy.fr</strong>, opéré 24/7 sur Proxmox. Chaque service tourne sur ce cluster — c'est mon terrain d'expérimentation en conditions réelles.
                         </p>
                         <p>
-                            Provisioning via <strong>Terraform</strong>, déploiements GitOps avec <strong>ArgoCD</strong>, stockage distribué <strong>LINSTOR/Piraeus</strong>, sauvegardes CSI avec <strong>Velero</strong>, SSO centralisé <strong>Authentik</strong>.
+                            Provisioning via <strong>Terraform</strong>, GitOps multi-clusters avec <strong>ArgoCD</strong> et <strong>Renovate</strong>, stockage distribué hyperconvergé <strong>LINSTOR/DRBD</strong> exposé via CSI, sauvegardes <strong>Velero</strong> sur stockage froid, SSO centralisé <strong>Authentik</strong>.
                         </p>
                         <div class="stat-row">
                             <div class="stat-box">
